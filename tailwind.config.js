@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
-        secondary: colors.blue,
+        primary: colors.purple,
+        secondary: colors.orange,
       },
       fontFamily: {
-        sans: ['var(--font-custom)', ...defaultTheme.fontFamily.sans],
+        lora: ['var(--font-lora)'],
       },
     },
   },

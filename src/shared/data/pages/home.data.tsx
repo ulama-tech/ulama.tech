@@ -36,31 +36,24 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import gasImg from '~/assets/images/gas.jpg';
+import Logo from '~/components/atoms/Logo';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: (
-    <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
-    </>
-  ),
+  title: <>Effortless Approvals.</>,
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+        <span className="font-lora font-semibold">ulama</span> shortens project timelines and reduces costs with
+        automated review and approval of permit applications.
       </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      <span className="hidden md:inline">Now accepting applicants for our private alpha.</span>
     </>
   ),
   callToAction: {
-    text: 'Get template',
+    text: 'Join the waitlist',
     href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    icon: IconMail,
     targetBlank: true,
   },
   callToAction2: {
