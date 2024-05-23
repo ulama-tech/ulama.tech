@@ -40,8 +40,8 @@ export const heroHome: HeroProps = {
   subtitle: (
     <>
       <span>
-        <span className="font-lora font-semibold">ulama</span> shortens construction project timelines and reduces costs
-        with automated review and approval of permit applications.
+        <span className="font-lora font-semibold">ulama</span> unblocks building permitting bottlenecks through
+        automated code compliance analysis. Now accepting applicants for our private alpha.
       </span>{' '}
       <span>Now accepting applicants for our private alpha.</span>
     </>
@@ -104,7 +104,7 @@ export const featuresHome: FeaturesProps = {
     ),
     subtitle: (
       <>
-        Our AI-powered Revit plug-in analyzes your architectural designs for code compliance, so you can{' '}
+        Our AI-powered Revit plugin analyzes your architectural designs for code compliance, so you can{' '}
         <em>be confident that your first submission is your last.</em>
       </>
     ),
@@ -113,20 +113,18 @@ export const featuresHome: FeaturesProps = {
   items: [
     {
       title: 'Automated code compliance',
-      description: 'At the press of a button, be confident that your design complies with all of our supported codes.',
+      description: 'With the press of a button, check that your design complies with the relevant codes we support.',
       icon: IconCheck,
     },
     {
       title: 'Easy integration with your existing design workflow',
-      description:
-        "Our Revit plugin allows you to analyze your existing designs using the software you're already using to design.",
+      description: 'Design without interruptions. Our Revit plugin brings analysis directly into your workflow.',
       icon: IconPencil,
     },
 
     {
-      title: 'Easier, faster communication with plan reviewers',
-      description:
-        'Ship our generated reports with your permit application submissions and see your review times decrease and the number of revisions required decrease.',
+      title: 'Clear communication with plan reviewers',
+      description: 'Send our analysis summary report with your design submissions and head off revision requests.',
       icon: IconListCheck,
       // callToAction: {
       //   text: 'Discover now',
@@ -452,7 +450,7 @@ export const teamHome: TeamProps = {
   header: {
     title: 'Our Team',
     subtitle:
-      'We have a combined 17+ years of experience building cutting-edge software, AI solutions, and architecture, engineering, and construction projects.',
+      'We have a combined 17+ years of experience of working in the AEC space, building cutting-edge software, and deploying AI solutions.',
   },
   teams: [
     {
