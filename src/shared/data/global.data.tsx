@@ -235,7 +235,7 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['370 Jay St, 7th Fl', 'Brooklyn 11201'],
+      texts: ['370 Jay St, 7th Fl', 'Brooklyn NY 11201'],
     },
     {
       title: 'Phone',

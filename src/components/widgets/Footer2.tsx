@@ -37,7 +37,7 @@ const Footer2 = () => {
           </ul>
         </div> */}
         <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
-          &#169; <span className="font-lora font-semibold">ulama</span>. All rights reserved.
+          &#169; <span className="font-lora font-semibold">ulama</span> 2024. All rights reserved.
         </div>
       </div>
       <div className="text-muted py-6 text-sm text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
