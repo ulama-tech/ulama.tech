@@ -68,16 +68,15 @@ export const headerData: HeaderProps = {
     // },
   ],
   actions: [
-    // TODO(maxdumas): Add scrolling link to the email signup
     {
       text: 'Join the waitlist',
-      href: 'https://github.com/onwidget/tailnext',
+      href: '#join',
       icon: IconMail,
-      targetBlank: true,
+      targetBlank: false,
     },
   ],
   isSticky: true,
-  showToggleTheme: true,
+  showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
 };

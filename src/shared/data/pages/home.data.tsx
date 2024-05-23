@@ -1,19 +1,14 @@
 import {
   IconArrowDown,
-  IconArrowsRightLeft,
   IconBrandLinkedin,
-  IconBrandTailwind,
-  IconBrandTwitter,
-  IconBulb,
   IconClock,
-  IconComponents,
-  IconDownload,
+  IconPencil,
   IconListCheck,
   IconMail,
   IconMapPin,
   IconPhoneCall,
-  IconRocket,
   IconBrandGithub,
+  IconCheck,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -51,18 +46,16 @@ export const heroHome: HeroProps = {
       <span>Now accepting applicants for our private alpha.</span>
     </>
   ),
-  // TODO(maxdumas): Add scrolling link to the email signup
   callToAction: {
     text: 'Join the waitlist',
-    href: 'https://github.com/onwidget/tailnext',
+    href: '#join',
     icon: IconMail,
-    targetBlank: true,
+    targetBlank: false,
   },
-  // TODO(maxdumas): Make scroll down
   callToAction2: {
     text: 'Learn more',
     icon: IconArrowDown,
-    href: '/',
+    href: '#features',
   },
   image: {
     src: heroImg,
@@ -100,79 +93,45 @@ export const socialProofHome: SocialProofProps = {
 
 // Features data on Home page *******************
 export const featuresHome: FeaturesProps = {
-  id: 'features-on-home',
+  id: 'features',
   hasBackground: false,
   columns: 3,
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        What you get with <span className="font-lora font-semibold">ulama</span>:
       </>
     ),
-    subtitle:
-      "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
+    subtitle: (
+      <>
+        Our AI-powered Revit plug-in analyzes your architectural designs for code compliance, so you can{' '}
+        <em>be confident that your first submission is your last.</em>
+      </>
+    ),
     tagline: 'Features',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
+      title: 'Automated code compliance',
+      description: 'At the press of a button, be confident that your design complies with all of our supported codes.',
+      icon: IconCheck,
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Easy integration with your existing design workflow',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
+        "Our Revit plugin allows you to analyze your existing designs using the software you're already using to design.",
+      icon: IconPencil,
     },
+
     {
-      title: 'Best Practices',
+      title: 'Easier, faster communication with plan reviewers',
       description:
-        'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
+        'Ship our generated reports with your permit application submissions and see your review times decrease and the number of revisions required decrease.',
       icon: IconListCheck,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Excellent Page Speed',
-      description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-      icon: IconRocket,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
-      icon: IconArrowsRightLeft,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
-      icon: IconBulb,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
+      // callToAction: {
+      //   text: 'Discover now',
+      //   href: '/',
+      // },
     },
   ],
 };
@@ -602,6 +561,7 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
+  id: 'join',
   title: 'Get in on the future of code compliance.',
   subtitle:
     'We are now accepting applicants for our private alpha. We want your input! Join our waitlist to receive insider info on our progress and help shape the future of code compliance.',
