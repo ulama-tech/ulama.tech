@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 
 type Widget = {
   id?: string;
@@ -86,7 +86,7 @@ type RadioBtn = {
 type SmallForm = {
   icon?: Icon;
   input: Input;
-  btn: Button;
+  btnElem: ReactElement;
 };
 
 type FormProps = {
@@ -111,7 +111,7 @@ type Item = {
   title?: string | boolean | number;
   description?: string | Array<string>;
   href?: string;
-  form?: SmallForm;
+  form?: ReactElement;
   icon?: Icon;
   callToAction?: CallToActionType;
 };

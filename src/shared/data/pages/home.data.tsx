@@ -580,19 +580,14 @@ export const callToAction2Home: CallToActionProps = {
       title: 'Join the waitlist',
       description:
         'We send occasional newsletters and product announcements to everyone on our waitlist. No spam, we promise!',
-      form: {
-        icon: IconMail,
-        input: {
-          type: 'email',
-          name: 'email',
-          autocomplete: 'email',
-          placeholder: 'stanford@mmw.com',
-        },
-        btn: {
-          title: 'Join',
-          type: 'submit',
-        },
-      },
+      form: (
+        <iframe
+          src="https://embeds.beehiiv.com/26751a32-8d34-4b28-8c9e-6a672327ec41?slim=true"
+          data-test-id="beehiiv-embed"
+          height="52"
+          style={{ width: '100%', margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent' }}
+        ></iframe>
+      ),
     },
   ],
 };
