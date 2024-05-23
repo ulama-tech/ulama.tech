@@ -70,7 +70,7 @@ export const headerData: HeaderProps = {
   actions: [
     {
       text: 'Join the waitlist',
-      href: '#join',
+      href: 'https://blog.ulama.tech/forms/c1440e5e-9f8a-435f-88d9-fce0d098cf6d',
       icon: IconMail,
       targetBlank: false,
     },

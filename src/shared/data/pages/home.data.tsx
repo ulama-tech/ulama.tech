@@ -48,7 +48,7 @@ export const heroHome: HeroProps = {
   ),
   callToAction: {
     text: 'Join the waitlist',
-    href: '#join',
+    href: 'https://blog.ulama.tech/forms/c1440e5e-9f8a-435f-88d9-fce0d098cf6d',
     icon: IconMail,
     targetBlank: false,
   },
@@ -561,10 +561,9 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  id: 'join',
   title: 'Get in on the future of code compliance.',
   subtitle:
-    'We are now accepting applicants for our private alpha. We want your input! Join our waitlist to receive insider info on our progress and help shape the future of code compliance.',
+    'We want your input! Join our newsletter to receive insider info on our progress and help shape the future of code compliance.',
   items: [
     // {
     //   title: 'Get template',
@@ -577,9 +576,9 @@ export const callToAction2Home: CallToActionProps = {
     //   href: '/',
     // },
     {
-      title: 'Join the waitlist',
+      title: 'Follow our progress!',
       description:
-        'We send occasional newsletters and product announcements to everyone on our waitlist. No spam, we promise!',
+        'We send occasional newsletters and product announcements to everyone on our list. No spam, we promise!',
       form: (
         <iframe
           src="https://embeds.beehiiv.com/26751a32-8d34-4b28-8c9e-6a672327ec41?slim=true"
