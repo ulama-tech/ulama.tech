@@ -5,6 +5,6 @@ module.exports.SITE = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Ulama | Effortless Approvals',
+  title: 'Ulama | Get stuff built, fast.',
   description: 'Ulama is making construction permitting effortless.',
 };
