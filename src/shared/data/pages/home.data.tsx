@@ -5,7 +5,6 @@ import {
   IconBrandTailwind,
   IconBrandTwitter,
   IconBulb,
-  IconCheck,
   IconClock,
   IconComponents,
   IconDownload,
@@ -14,6 +13,7 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconBrandGithub,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -36,33 +36,37 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import gasImg from '~/assets/images/gas.jpg';
-import Logo from '~/components/atoms/Logo';
+import tyceImg from '~/assets/images/tyce.jpeg';
+import maxImg from '~/assets/images/max.jpeg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: <>Effortless Approvals.</>,
+  title: <>Get stuff built, fast.</>,
   subtitle: (
     <>
-      <span className="hidden md:inline">
-        <span className="font-lora font-semibold">ulama</span> shortens project timelines and reduces costs with
-        automated review and approval of permit applications.
+      <span>
+        <span className="font-lora font-semibold">ulama</span> shortens construction project timelines and reduces costs
+        with automated review and approval of permit applications.
       </span>{' '}
-      <span className="hidden md:inline">Now accepting applicants for our private alpha.</span>
+      <span>Now accepting applicants for our private alpha.</span>
     </>
   ),
+  // TODO(maxdumas): Add scrolling link to the email signup
   callToAction: {
     text: 'Join the waitlist',
     href: 'https://github.com/onwidget/tailnext',
     icon: IconMail,
     targetBlank: true,
   },
+  // TODO(maxdumas): Make scroll down
   callToAction2: {
     text: 'Learn more',
+    icon: IconArrowDown,
     href: '/',
   },
   image: {
     src: heroImg,
-    alt: 'Hero TailNext',
+    alt: 'Ulama in Action',
   },
 };
 
@@ -487,109 +491,53 @@ export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
   header: {
-    title: 'Team Members',
+    title: 'Our Team',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
-    // tagline: 'Team',
+      'We have a combined 17+ years of experience building cutting-edge software, AI solutions, and architecture, engineering, and construction projects.',
   },
   teams: [
     {
-      name: 'Cindy Belcher',
-      occupation: 'SEO Consultant',
+      name: 'Tyce Herrman',
+      occupation: 'CEO',
       image: {
-        src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Cindy Belcher',
+        src: tyceImg,
+        alt: 'Tyce Herrman',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/tyceherrman/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:tyce@ulama.tech',
         },
       ],
     },
     {
-      name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      name: 'Max Dumas',
+      occupation: 'CTO',
       image: {
-        src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-        alt: 'Toby Foster',
+        src: maxImg,
+        alt: 'Max Dumas',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/maximilliandumas/',
+        },
+        {
+          title: 'Know more on GitHub',
+          icon: IconBrandGithub,
+          href: 'https://github.com/maxdumas',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Clark Bourne',
-      occupation: 'Content Manager',
-      image: {
-        src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Clark Bourne',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Bella Chase',
-      occupation: 'UX Designer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Bella Chase',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
+          href: 'mailto:max@ulama.tech',
         },
       ],
     },
@@ -654,38 +602,39 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
+  title: 'Get in on the future of code compliance.',
   subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+    'We are now accepting applicants for our private alpha. We want your input! Join our waitlist to receive insider info on our progress and help shape the future of code compliance.',
   callToAction: {
     text: 'Get template',
     href: 'https://github.com/onwidget/tailnext',
     icon: IconDownload,
   },
   items: [
+    // {
+    //   title: 'Get template',
+    //   description: 'Aliquam sodales est lectus, quis.',
+    //   href: 'https://github.com/onwidget/tailnext',
+    // },
+    // {
+    //   title: 'Learn more',
+    //   description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+    //   href: '/',
+    // },
     {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
-    },
-    {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
-    },
-    {
-      title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+      title: 'Join the waitlist',
+      description:
+        'We send occasional newsletters and product announcements to everyone on our waitlist. No spam, we promise!',
       form: {
         icon: IconMail,
         input: {
           type: 'email',
           name: 'email',
           autocomplete: 'email',
-          placeholder: 'Enter your email address',
+          placeholder: 'stanford@mmw.com',
         },
         btn: {
-          title: 'Subscribe',
+          title: 'Join',
           type: 'submit',
         },
       },

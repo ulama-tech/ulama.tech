@@ -4,6 +4,7 @@ import {
   IconBrandInstagram,
   IconBrandTwitter,
   IconChevronDown,
+  IconMail,
   IconRss,
 } from '@tabler/icons-react';
 import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
@@ -24,53 +25,55 @@ export const announcementData: AnnouncementProps = {
 // Header data
 export const headerData: HeaderProps = {
   links: [
-    {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Services',
-          href: '/services',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-      ],
-    },
+    // {
+    //   label: 'Pages',
+    //   icon: IconChevronDown,
+    //   links: [
+    //     {
+    //       label: 'Services',
+    //       href: '/services',
+    //     },
+    //     {
+    //       label: 'Pricing',
+    //       href: '/pricing',
+    //     },
+    //     {
+    //       label: 'About us',
+    //       href: '/about',
+    //     },
+    //     {
+    //       label: 'Contact us',
+    //       href: '/contact',
+    //     },
+    //     {
+    //       label: 'FAQs',
+    //       href: '/faqs',
+    //     },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //   ],
+    // },
     {
       label: 'Blog',
-      href: '/blog',
+      href: 'https://blog.ulama.tech/',
     },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
+    // {
+    //   label: 'Contact',
+    //   href: '/contact',
+    // },
   ],
   actions: [
+    // TODO(maxdumas): Add scrolling link to the email signup
     {
-      text: 'Download',
+      text: 'Join the waitlist',
       href: 'https://github.com/onwidget/tailnext',
+      icon: IconMail,
       targetBlank: true,
     },
   ],
