@@ -559,9 +559,8 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  title: 'Get in on the future of code compliance.',
-  subtitle:
-    'We want your input! Join our newsletter to receive insider info on our progress and help shape the future of code compliance.',
+  title: 'We want to hear from you!',
+  subtitle: 'Email us at hello@ulama.tech to help shape the future of permitting.',
   items: [
     // {
     //   title: 'Get template',
@@ -575,13 +574,13 @@ export const callToAction2Home: CallToActionProps = {
     // },
     {
       title: 'Follow our progress!',
-      description:
-        'We send occasional newsletters and product announcements to everyone on our list. No spam, we promise!',
+      description: 'We send occasional newsletters and product announcements. No spam, we promise!',
       form: (
         <iframe
           src="https://embeds.beehiiv.com/26751a32-8d34-4b28-8c9e-6a672327ec41?slim=true"
           data-test-id="beehiiv-embed"
           height="auto"
+          allowTransparency={true}
           style={{ width: '100%', margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent' }}
         ></iframe>
       ),
