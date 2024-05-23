@@ -1,7 +1,7 @@
 import { footerData2 } from '~/shared/data/global.data';
 
 const Footer2 = () => {
-  const { links, columns, socials, footNote } = footerData2;
+  const { links, columns } = footerData2;
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -20,7 +20,7 @@ const Footer2 = () => {
               ))}
           </div>
         ))}
-        <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
+        {/* <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
           <div className="mb-2 font-medium text-gray-800 dark:text-gray-300">Social</div>
           <ul className="mb-4 -ml-2 flex md:order-1 md:mb-0">
             {socials.map(({ label, icon: Icon, href }, index) => (
@@ -35,6 +35,9 @@ const Footer2 = () => {
               </li>
             ))}
           </ul>
+        </div> */}
+        <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
+          &#169; <span className="font-lora font-semibold">ulama</span>. All rights reserved.
         </div>
       </div>
       <div className="text-muted py-6 text-sm text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
@@ -53,7 +56,6 @@ const Footer2 = () => {
               </li>
             ))}
         </ul>
-        {footNote}
       </div>
     </div>
   );

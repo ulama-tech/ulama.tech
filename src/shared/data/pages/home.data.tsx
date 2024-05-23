@@ -605,11 +605,6 @@ export const callToAction2Home: CallToActionProps = {
   title: 'Get in on the future of code compliance.',
   subtitle:
     'We are now accepting applicants for our private alpha. We want your input! Join our waitlist to receive insider info on our progress and help shape the future of code compliance.',
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-  },
   items: [
     // {
     //   title: 'Get template',
