@@ -10,11 +10,10 @@ export const metadata: Metadata = {
 const Page = () => {
   const subtitleElem = (
     <>
-      You&apos;ve accepted your invite and your account is now fully created. You can now login to your account through
-      the Revit Plugin.
+      Your account is active, and you can now log in within the plugin.
       <br />
       <br />
-      We&apos;re thrilled to have you!
+      We&apos;re thrilled to have you, and thanks for your help!
     </>
   );
 
@@ -24,23 +23,22 @@ const Page = () => {
     },
     items: [
       {
-        title: "I don't have a build of the Ulama Revit Plugin.",
+        title: "Hold up, I don't actually have the plugin!",
         description: (
           <>
-            Ulama is currently in a closed alpha, and so we don&apos;t distribute public links to download the
-            installer. If you don&apos;t already have access to a build of the app, reach out to{' '}
-            <a href="mailto:hello@ulama.tech">hello@ulama.tech</a> or whoever you last spoke to with us and we&apos;ll
-            help you out.
+            We're currently in a private alpha, so we don&apos;t distribute public links to download the installer.
+            Reach out to <a href="mailto:hello@ulama.tech">hello@ulama.tech</a> (or{' '}
+            <a href="mailto:max@ulama.tech">Max</a> or <a href="mailto:tyce@ulama.tech">Tyce</a>) and we&apos;ll help
+            you out.
           </>
         ),
       },
       {
-        title: 'What versions of Revit do you currently support?',
+        title: 'What versions of Revit do you support?',
         description: (
           <>
-            We strive to support all versions of Revit that our customers use, within reason. Currently we support Revit
-            2021, 2022, 2023, 2024, and 2025. If you need an additional version supported, reach to us at{' '}
-            <a href="mailto:hello@ulama.tech">hello@ulama.tech</a>.
+            We currently support Revit 2021-2025. If you need an additional version supported,{' '}
+            <a href="mailto:hello@ulama.tech">let us know</a>.
           </>
         ),
       },
@@ -49,7 +47,7 @@ const Page = () => {
 
   return (
     <>
-      <Hero title="You're in!" subtitle={subtitleElem} />
+      <Hero title="You're in! 🥳" subtitle={subtitleElem} />
       <FAQs {...faqProps} />
     </>
   );
