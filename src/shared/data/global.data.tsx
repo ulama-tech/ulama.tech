@@ -76,7 +76,7 @@ export const headerData: HeaderProps = {
     },
   ],
   isSticky: true,
-  showToggleTheme: true,
+  showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
 };
