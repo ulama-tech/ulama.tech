@@ -514,17 +514,35 @@ export const contactHome: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: (
+        <>
+          1230 Maecenas Street Donec Road
+          <br />
+          New York, EEUU
+        </>
+      ),
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: (
+        <>
+          Mobile: +1 (123) 456-7890
+          <br />
+          Mail: tailnext@gmail.com
+        </>
+      ),
       icon: IconPhoneCall,
     },
     {
       title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      description: (
+        <>
+          Monday - Friday: 08:00 - 17:00
+          <br />
+          Saturday & Sunday: 08:00 - 12:00
+        </>
+      ),
       icon: IconClock,
     },
   ],

@@ -24,12 +24,7 @@ const Contact = ({ header, content, items, form, id, hasBackground = false }: Co
                         {description}
                       </p>
                     ) : (
-                      description &&
-                      description.map((desc, index) => (
-                        <p key={`text-description-${index}`} className="text-gray-600 dark:text-slate-400">
-                          {desc}
-                        </p>
-                      ))
+                      description && <>{description}</>
                     )}
                   </div>
                 </li>

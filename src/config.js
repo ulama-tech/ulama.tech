@@ -1,5 +1,5 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'Ulama',
 
   origin: 'https://ulama.tech',
   basePathname: '/',
