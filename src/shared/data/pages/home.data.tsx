@@ -41,7 +41,7 @@ export const heroHome: HeroProps = {
     <>
       <span>
         <span className="font-lora font-semibold">ulama</span> unblocks building permitting bottlenecks through
-        automated code compliance analysis. Now accepting applicants for our private alpha.
+        automated code compliance analysis.
       </span>{' '}
       <span>Now accepting applicants for our private alpha.</span>
     </>

@@ -26,7 +26,7 @@ const Page = () => {
         title: "Hold up, I don't actually have the plugin!",
         description: (
           <>
-            We're currently in a private alpha, so we don&apos;t distribute public links to download the installer.
+            We&apos;re currently in a private alpha, so we don&apos;t distribute public links to download the installer.
             Reach out to <a href="mailto:hello@ulama.tech">hello@ulama.tech</a> (or{' '}
             <a href="mailto:max@ulama.tech">Max</a> or <a href="mailto:tyce@ulama.tech">Tyce</a>) and we&apos;ll help
             you out.
