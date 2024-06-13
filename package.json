@@ -52,6 +52,7 @@
     "prettier-plugin-tailwindcss": "0.5.11",
     "storybook": "^7.6.10",
     "tailwindcss": "^3.4.1",
+    "turbo": "^2.0.3",
     "typescript": "^5.3.3"
   },
   "engines": {
