@@ -108,7 +108,7 @@ export const featuresHome: FeaturesProps = {
         <em>be confident that your first submission is your last.</em>
       </>
     ),
-    tagline: 'Features',
+    tagline: 'Benefits',
   },
   items: [
     {
@@ -123,7 +123,7 @@ export const featuresHome: FeaturesProps = {
     },
 
     {
-      title: 'Clear communication with plan reviewers',
+      title: 'Seamless communication with plan reviewers',
       description: 'Send our analysis summary report with your design submissions and head off revision requests.',
       icon: IconListCheck,
       // callToAction: {
@@ -598,7 +598,6 @@ export const callToAction2Home: CallToActionProps = {
           src="https://embeds.beehiiv.com/26751a32-8d34-4b28-8c9e-6a672327ec41?slim=true"
           data-test-id="beehiiv-embed"
           height="auto"
-          allowTransparency={true}
           style={{ width: '100%', margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent' }}
         ></iframe>
       ),
