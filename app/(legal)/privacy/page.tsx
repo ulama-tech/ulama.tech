@@ -18,6 +18,7 @@ const Page = () => {
       dangerouslySetInnerHTML={{
         __html: md({
           html: true,
+          breaks: true,
         }).render(fileContent),
       }}
     />
