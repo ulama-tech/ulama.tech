@@ -223,14 +223,14 @@ export const footerData: FooterProps = {
 // Footer2 data
 export const footerData2: FooterProps = {
   links: [
-    // {
-    //   label: 'Terms & Conditions',
-    //   href: '/terms',
-    // },
-    // {
-    //   label: 'Privacy Policy',
-    //   href: '/privacy',
-    // },
+    {
+      label: 'Terms of Service',
+      href: '/terms',
+    },
+    {
+      label: 'Privacy Policy',
+      href: '/privacy',
+    },
   ],
   columns: [
     {
