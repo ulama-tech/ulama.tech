@@ -5,7 +5,6 @@ import { SITE } from '~/config.js';
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Announcement from '~/components/widgets/Announcement';
-import Footer2 from '~/components/widgets/Footer2';
 
 import { Lora } from 'next/font/google';
 import '~/assets/styles/base.css';
@@ -19,6 +18,7 @@ const PostHogPageView = dynamic(() => import('../src/components/PostHogPageView'
 });
 
 const CookieConsentBanner = dynamic(() => import('../src/components/common/CookieConsentBanner'), { ssr: false });
+const Footer2 = dynamic(() => import('../src/components/widgets/Footer2'), { ssr: false });
 
 export interface LayoutProps {
   children: React.ReactNode;

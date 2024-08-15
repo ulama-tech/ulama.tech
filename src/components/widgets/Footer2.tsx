@@ -1,7 +1,11 @@
+'use client';
+
 import { footerData2 } from '~/shared/data/global.data';
+import { useCookieConsent } from '~/utils/cookie';
 
 const Footer2 = () => {
   const { links, columns } = footerData2;
+  const [consentState, setConsentState] = useCookieConsent();
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -36,8 +40,18 @@ const Footer2 = () => {
             ))}
           </ul>
         </div> */}
-        <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
-          &#169; <span className="font-lora font-semibold">ulama</span> 2024. All rights reserved.
+        <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-end">
+          <span>
+            &#169; <span className="font-lora font-semibold">ulama</span> 2024. All rights reserved.
+          </span>
+          {(consentState === true || consentState === null) && (
+            <button
+              className="text-sm text-gray-600 dark:text-slate-400 cursor-pointer"
+              onClick={() => setConsentState(false)}
+            >
+              Opt out of tracking.
+            </button>
+          )}
         </div>
       </div>
       <div className="text-muted py-6 text-sm text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
