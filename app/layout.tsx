@@ -18,6 +18,8 @@ const PostHogPageView = dynamic(() => import('../src/components/PostHogPageView'
   ssr: false,
 });
 
+const CookieConsentBanner = dynamic(() => import('../src/components/common/CookieConsentBanner'), { ssr: false });
+
 export interface LayoutProps {
   children: React.ReactNode;
 }
@@ -40,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className="tracking-tight antialiased text-gray-900 dark:text-slate-300">
         <Providers>
           <PostHogPageView />
+          <CookieConsentBanner />
           {/* <Announcement /> */}
           <Header />
           <main>{children}</main>
