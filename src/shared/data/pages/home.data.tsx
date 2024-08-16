@@ -1,15 +1,15 @@
 import {
-  IconArrowDown,
-  IconBrandLinkedin,
-  IconClock,
-  IconPencil,
-  IconListCheck,
-  IconMail,
-  IconMapPin,
-  IconPhoneCall,
-  IconBrandGithub,
-  IconCheck,
-} from '@tabler/icons-react';
+  ArrowDownIcon,
+  LinkedinIcon,
+  ClockIcon,
+  PencilIcon,
+  ListCheckIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneCallIcon,
+  GithubIcon,
+  CheckIcon,
+} from 'lucide-react';
 import {
   CallToActionProps,
   ContactProps,
@@ -49,12 +49,12 @@ export const heroHome: HeroProps = {
   callToAction: {
     text: 'Join the waitlist',
     href: 'https://blog.ulama.tech/forms/c1440e5e-9f8a-435f-88d9-fce0d098cf6d',
-    icon: IconMail,
+    icon: MailIcon,
     targetBlank: false,
   },
   callToAction2: {
     text: 'Learn more',
-    icon: IconArrowDown,
+    icon: ArrowDownIcon,
     href: '#features',
   },
   image: {
@@ -114,18 +114,18 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Automated code compliance',
       description: 'With the press of a button, check that your design complies with the relevant codes we support.',
-      icon: IconCheck,
+      icon: CheckIcon,
     },
     {
       title: 'Easy integration with your existing design workflow',
       description: 'Design without interruptions. Our Revit plugin brings analysis directly into your workflow.',
-      icon: IconPencil,
+      icon: PencilIcon,
     },
 
     {
       title: 'Seamless communication with plan reviewers',
       description: 'Send our analysis summary report with your design submissions and head off revision requests.',
-      icon: IconListCheck,
+      icon: ListCheckIcon,
       // callToAction: {
       //   text: 'Discover now',
       //   href: '/',
@@ -222,19 +222,19 @@ export const stepsHome: StepsProps = {
       title: 'Step 1',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-      icon: IconArrowDown,
+      icon: ArrowDownIcon,
     },
     {
       title: 'Step 2',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-      icon: IconArrowDown,
+      icon: ArrowDownIcon,
     },
     {
       title: 'Step 3',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-      icon: IconArrowDown,
+      icon: ArrowDownIcon,
     },
     {
       title: 'Ready!',
@@ -463,12 +463,12 @@ export const teamHome: TeamProps = {
       items: [
         {
           title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
+          icon: LinkedinIcon,
           href: 'https://www.linkedin.com/in/tyceherrman/',
         },
         {
           title: 'Contact by email',
-          icon: IconMail,
+          icon: MailIcon,
           href: 'mailto:tyce@ulama.tech',
         },
       ],
@@ -483,17 +483,17 @@ export const teamHome: TeamProps = {
       items: [
         {
           title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
+          icon: LinkedinIcon,
           href: 'https://www.linkedin.com/in/maximilliandumas/',
         },
         {
           title: 'Know more on GitHub',
-          icon: IconBrandGithub,
+          icon: GithubIcon,
           href: 'https://github.com/maxdumas',
         },
         {
           title: 'Contact by email',
-          icon: IconMail,
+          icon: MailIcon,
           href: 'mailto:max@ulama.tech',
         },
       ],
@@ -521,7 +521,7 @@ export const contactHome: ContactProps = {
           New York, EEUU
         </>
       ),
-      icon: IconMapPin,
+      icon: MapPinIcon,
     },
     {
       title: 'Contact',
@@ -532,7 +532,7 @@ export const contactHome: ContactProps = {
           Mail: tailnext@gmail.com
         </>
       ),
-      icon: IconPhoneCall,
+      icon: PhoneCallIcon,
     },
     {
       title: 'Working hours',
@@ -543,7 +543,7 @@ export const contactHome: ContactProps = {
           Saturday & Sunday: 08:00 - 12:00
         </>
       ),
-      icon: IconClock,
+      icon: ClockIcon,
     },
   ],
   form: {

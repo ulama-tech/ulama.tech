@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { IconCheck } from '@tabler/icons-react';
+import { CheckIcon } from 'lucide-react';
 import { StepsProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
 import Timeline from '../common/Timeline';
@@ -33,7 +33,7 @@ const Steps = ({
             subtitleClass={isImageDisplayed ? 'text-left rtl:text-right' : ''}
           />
         )}
-        <Timeline items={items} defaultIcon={IconCheck} iconClass="text-primary border-primary-900" />
+        <Timeline items={items} defaultIcon={CheckIcon} iconClass="text-primary border-primary-900" />
       </div>
       {isImageDisplayed && (
         <div className="relative md:basis-1/2">

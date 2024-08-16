@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { IconRss } from '@tabler/icons-react';
+import { RssIcon } from 'lucide-react';
 import ToggleDarkMode from '~/components/atoms/ToggleDarkMode';
 import Link from 'next/link';
 import Logo from '~/components/atoms/Logo';
@@ -134,7 +134,7 @@ const Header = () => {
                 aria-label="RSS Feed"
                 href=""
               >
-                <IconRss className="h-5 w-5" />
+                <RssIcon className="h-5 w-5" />
               </Link>
             )}
             {actions && actions.length > 0 && (

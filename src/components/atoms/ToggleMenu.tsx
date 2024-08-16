@@ -1,6 +1,6 @@
 'use client';
 
-import { IconMenu, IconX } from '@tabler/icons-react';
+import { MenuIcon, XIcon } from 'lucide-react';
 import { ToggleMenuProps } from '~/shared/types';
 
 const ToggleMenu = ({ handleToggleMenuOnClick, isToggleMenuOpen }: ToggleMenuProps) => (
@@ -10,7 +10,7 @@ const ToggleMenu = ({ handleToggleMenuOnClick, isToggleMenuOpen }: ToggleMenuPro
     aria-label="Toggle Menu"
     onClick={handleToggleMenuOnClick}
   >
-    {isToggleMenuOpen ? <IconX className="h-6 w-6" /> : <IconMenu className="h-6 w-6" />}
+    {isToggleMenuOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
   </button>
 );
 

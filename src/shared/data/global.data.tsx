@@ -1,12 +1,4 @@
-import {
-  IconBrandFacebook,
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandTwitter,
-  IconChevronDown,
-  IconMail,
-  IconRss,
-} from '@tabler/icons-react';
+import { FacebookIcon, GithubIcon, InstagramIcon, TwitterIcon, ChevronDownIcon, MailIcon, RssIcon } from 'lucide-react';
 import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 
 // Announcement data
@@ -27,7 +19,7 @@ export const headerData: HeaderProps = {
   links: [
     // {
     //   label: 'Pages',
-    //   icon: IconChevronDown,
+    //   icon: ChevronDownIcon,
     //   links: [
     //     {
     //       label: 'Services',
@@ -61,7 +53,7 @@ export const headerData: HeaderProps = {
     // },
     {
       label: 'Products',
-      icon: IconChevronDown,
+      icon: ChevronDownIcon,
       links: [{ label: 'Rose', href: '/products/rose' }],
     },
     {
@@ -77,7 +69,7 @@ export const headerData: HeaderProps = {
     {
       text: 'Join the waitlist',
       href: 'https://blog.ulama.tech/forms/c1440e5e-9f8a-435f-88d9-fce0d098cf6d',
-      icon: IconMail,
+      icon: MailIcon,
       targetBlank: false,
     },
   ],
@@ -207,11 +199,11 @@ export const footerData: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+    { label: 'Twitter', icon: TwitterIcon, href: '#' },
+    { label: 'Instagram', icon: InstagramIcon, href: '#' },
+    { label: 'Facebook', icon: FacebookIcon, href: '#' },
+    { label: 'RSS', icon: RssIcon, href: '#' },
+    { label: 'Github', icon: GithubIcon, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
@@ -253,10 +245,10 @@ export const footerData2: FooterProps = {
     },
   ],
   socials: [
-    // { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    // { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    // { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    // { label: 'RSS', icon: IconRss, href: '#' },
-    // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/ulama-tech' },
+    // { label: 'Twitter', icon: TwitterIcon, href: '#' },
+    // { label: 'Instagram', icon: InstagramIcon, href: '#' },
+    // { label: 'Facebook', icon: FacebookIcon, href: '#' },
+    // { label: 'RSS', icon: RssIcon, href: '#' },
+    // { label: 'Github', icon: GithubIcon, href: 'https://github.com/ulama-tech' },
   ],
 };

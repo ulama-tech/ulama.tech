@@ -1,4 +1,11 @@
-import { IconClock, IconHeadset, IconHelp, IconMapPin, IconMessages, IconPhoneCall } from '@tabler/icons-react';
+import {
+  ClockIcon,
+  HeadsetIcon,
+  CircleHelpIcon,
+  MapPinIcon,
+  MessageCircleQuestionIcon,
+  PhoneCallIcon,
+} from 'lucide-react';
 import { ContactProps, FeaturesProps } from '~/shared/types';
 import { HeroProps } from '~/shared/types';
 
@@ -37,7 +44,7 @@ export const contact2Contact: ContactProps = {
           New York, EEUU
         </>
       ),
-      icon: IconMapPin,
+      icon: MapPinIcon,
     },
     {
       title: 'Contact',
@@ -48,7 +55,7 @@ export const contact2Contact: ContactProps = {
           Mail: tailnext@gmail.com
         </>
       ),
-      icon: IconPhoneCall,
+      icon: PhoneCallIcon,
     },
     {
       title: 'Working hours',
@@ -59,7 +66,7 @@ export const contact2Contact: ContactProps = {
           Saturday & Sunday: 08:00 - 12:00
         </>
       ),
-      icon: IconClock,
+      icon: ClockIcon,
     },
   ],
   form: {
@@ -139,7 +146,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Have a question?',
       description: 'See our frequently asked questions',
-      icon: IconHelp,
+      icon: CircleHelpIcon,
       callToAction: {
         text: 'Go to FAQ page',
         href: '/faqs',
@@ -148,7 +155,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Chat with us',
       description: 'Live chat with our support team',
-      icon: IconMessages,
+      icon: MessageCircleQuestionIcon,
       callToAction: {
         text: 'Write to us',
         href: '/',
@@ -157,7 +164,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Get help',
       description: 'Speak to our team today',
-      icon: IconHeadset,
+      icon: HeadsetIcon,
       callToAction: {
         text: 'Call us',
         href: '/',

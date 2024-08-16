@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { IconCheck } from '@tabler/icons-react';
+import { CheckIcon } from 'lucide-react';
 
 import { ContentProps } from '~/shared/types';
 import Headline from '../common/Headline';
@@ -29,7 +29,7 @@ const Content = ({
           <ItemGrid
             items={items}
             columns={1}
-            defaultIcon={IconCheck}
+            defaultIcon={CheckIcon}
             containerClass="gap-4 md:gap-y-6"
             panelClass="flex max-w-full"
             titleClass="text-lg font-medium leading-6 text-gray-900 dark:text-white mt-1 mb-2"

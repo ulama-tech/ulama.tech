@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image';
 import React, { ReactElement } from 'react';
+import { Icon } from 'lucide-react';
 
 type Widget = {
   id?: string;
@@ -31,7 +32,7 @@ type HeadlineProps = {
   subtitleClass?: string;
 };
 
-type Icon = React.ComponentType<React.ComponentProps<'svg'>>;
+type Icon = typeof Icon;
 
 type CallToActionType = {
   text?: string;

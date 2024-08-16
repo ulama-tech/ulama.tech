@@ -1,6 +1,6 @@
 'use client';
 
-import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
+import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
 import useCollapse from '~/hooks/useCollapse';
 import { CollapseProps } from '~/shared/types';
 
@@ -32,9 +32,9 @@ const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps)
                   iconDown
                 )
               ) : activeIndex === index ? (
-                <IconChevronUp className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+                <ChevronUpIcon className="h-6 w-6 text-primary-600 dark:text-slate-200" />
               ) : (
-                <IconChevronDown className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+                <ChevronDownIcon className="h-6 w-6 text-primary-600 dark:text-slate-200" />
               )}
             </div>
             {activeIndex === index && (

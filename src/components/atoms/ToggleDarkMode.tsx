@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { IconSun, IconMoon } from '@tabler/icons-react';
+import { SunIcon, MoonIcon } from 'lucide-react';
 
 const ToggleDarkMode = () => {
   const [mounted, setMounted] = useState<boolean>(false);
@@ -24,9 +24,9 @@ const ToggleDarkMode = () => {
     >
       {mounted ? (
         currentTheme === 'dark' ? (
-          <IconMoon className="h-5 w-5" />
+          <MoonIcon className="h-5 w-5" />
         ) : (
-          <IconSun className="h-5 w-5" />
+          <SunIcon className="h-5 w-5" />
         )
       ) : (
         <div className="h-5 w-5"></div>

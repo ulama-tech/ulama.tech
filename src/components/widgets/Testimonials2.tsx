@@ -4,7 +4,7 @@ import { TestimonialsProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
 import ItemTestimonial from '../common/ItemTestimonial';
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { useState } from 'react';
 
 const Testimonials2 = ({ header, testimonials, isTestimonialUp, id, hasBackground = false }: TestimonialsProps) => {
@@ -54,7 +54,7 @@ const Testimonials2 = ({ header, testimonials, isTestimonialUp, id, hasBackgroun
                 />
                 <div className="md:absolute md:inset-0 flex items-center justify-center md:justify-between p-4 mb-6 md:mb-0">
                   <button onClick={() => handleGoToPrevious(index)}>
-                    <IconChevronLeft
+                    <ChevronLeftIcon
                       className={`w-12 h-12 mr-4 ${
                         activeIndex === firstIndex
                           ? 'cursor-not-allowed text-gray-400 dark:text-gray-600'
@@ -63,7 +63,7 @@ const Testimonials2 = ({ header, testimonials, isTestimonialUp, id, hasBackgroun
                     />
                   </button>
                   <button onClick={() => handleGoToNext(index)}>
-                    <IconChevronRight
+                    <ChevronRightIcon
                       className={`w-12 h-12 ml-4 ${
                         activeIndex === lastIndex
                           ? 'cursor-not-allowed text-gray-400 dark:text-gray-600'

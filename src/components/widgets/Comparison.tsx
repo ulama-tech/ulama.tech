@@ -1,4 +1,4 @@
-import { IconCheck, IconMinus } from '@tabler/icons-react';
+import { CheckIcon, MinusIcon } from 'lucide-react';
 import { CallToActionType, ComparisonProps } from '~/shared/types';
 import CTA from '../common/CTA';
 import Headline from '../common/Headline';
@@ -31,9 +31,9 @@ const Comparison = ({ header, columns, id, hasBackground = false }: ComparisonPr
                 className={`leading-7 text-gray-600 dark:text-slate-400 ${index === 0 ? 'text-left' : 'text-center'}`}
               >
                 {(title2 as boolean) === true ? (
-                  <IconCheck className="mt-2 w-full" />
+                  <CheckIcon className="mt-2 w-full" />
                 ) : (title2 as boolean) === false ? (
-                  <IconMinus className="mt-2 w-full" />
+                  <MinusIcon className="mt-2 w-full" />
                 ) : index !== 0 ? (
                   <p className="mt-2">{title2}</p>
                 ) : (

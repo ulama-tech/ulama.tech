@@ -1,6 +1,6 @@
 'use client';
 
-import { IconCheck, IconChevronDown, IconChevronUp } from '@tabler/icons-react';
+import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Dropdown as DropdownType, Tab } from '~/shared/types';
 
@@ -41,9 +41,9 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
             iconUp
           )
         ) : isDropdownOpen === false ? (
-          <IconChevronDown className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+          <ChevronDownIcon className="h-6 w-6 text-primary-600 dark:text-slate-200" />
         ) : (
-          <IconChevronUp className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+          <ChevronUpIcon className="h-6 w-6 text-primary-600 dark:text-slate-200" />
         )}
       </div>
       {isDropdownOpen && (
@@ -56,7 +56,7 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
                 activeTab !== index ? 'pl-10' : 'text-primary-600 dark:text-primary-200'
               }`}
             >
-              {activeTab === index && <IconCheck className="mr-2 h-5 w-5" />} {option.link?.label}
+              {activeTab === index && <CheckIcon className="mr-2 h-5 w-5" />} {option.link?.label}
             </div>
           ))}
         </div>

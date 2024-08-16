@@ -1,4 +1,4 @@
-import { IconChevronRight } from '@tabler/icons-react';
+import { ChevronRightIcon } from 'lucide-react';
 import { CallToActionProps, Item } from '~/shared/types';
 
 const Card = ({ title, description, href, form }: Item) => (
@@ -10,7 +10,7 @@ const Card = ({ title, description, href, form }: Item) => (
       </div>
       {href && (
         <div className="flex h-10 w-10 items-center justify-center">
-          <IconChevronRight className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+          <ChevronRightIcon className="h-6 w-6 text-primary-600 dark:text-slate-200" />
         </div>
       )}
     </div>
