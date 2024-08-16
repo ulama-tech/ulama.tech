@@ -15,7 +15,7 @@ import {
 } from '~/shared/data/pages/products.rose.data';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Rose',
 };
 
 const Page = () => {
