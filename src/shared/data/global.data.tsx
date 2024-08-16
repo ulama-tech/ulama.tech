@@ -3,6 +3,7 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandTwitter,
+  IconChevronDown,
   IconMail,
   IconRss,
 } from '@tabler/icons-react';
@@ -58,6 +59,11 @@ export const headerData: HeaderProps = {
     //     },
     //   ],
     // },
+    {
+      label: 'Products',
+      icon: IconChevronDown,
+      links: [{ label: 'Rose', href: '/products/rose' }],
+    },
     {
       label: 'Blog',
       href: 'https://blog.ulama.tech/',
