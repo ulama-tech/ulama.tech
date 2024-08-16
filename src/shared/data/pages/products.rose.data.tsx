@@ -1,6 +1,6 @@
 import { ChevronsRightIcon, FlowerIcon } from 'lucide-react';
 
-import { CallToActionProps, ContentProps, FAQsProps, HeroProps, TestimonialsProps } from '~/shared/types';
+import { CallToActionProps, ContentProps, FAQsProps, HeroProps, PricingProps, TestimonialsProps } from '~/shared/types';
 
 import heroImg from '~/assets/images/hero.jpg';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
@@ -103,6 +103,95 @@ export const testimonialsServices: TestimonialsProps = {
     text: 'More testimonials...',
     href: '/',
   },
+};
+
+export const pricingHome: PricingProps = {
+  id: 'pricing-on-rose',
+  hasBackground: true,
+  header: {
+    title: 'Prices for each plan',
+    subtitle:
+      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
+    // tagline: 'Pricing',
+  },
+  prices: [
+    {
+      title: 'basic',
+      price: 29,
+      period: 'per month',
+      items: [
+        {
+          description: 'Etiam in libero, et volutpat',
+        },
+        {
+          description: 'Aenean ac nunc dolor tristique',
+        },
+        {
+          description: 'Cras scelerisque accumsan lib',
+        },
+        {
+          description: 'In hac habitasse',
+        },
+      ],
+      callToAction: {
+        targetBlank: true,
+        text: 'Free 7-day trial',
+        href: '/',
+      },
+      hasRibbon: false,
+    },
+    {
+      title: 'standard',
+      price: 69,
+      period: 'per month',
+      items: [
+        {
+          description: 'Proin vel laoreet',
+        },
+        {
+          description: 'Ut efficitur egestas',
+        },
+        {
+          description: 'Pellentesque ut nibh',
+        },
+        {
+          description: 'Donec fringilla sem',
+        },
+      ],
+      callToAction: {
+        targetBlank: true,
+        text: 'Free 15-day trial',
+        href: '/',
+      },
+      hasRibbon: true,
+      ribbonTitle: 'Popular',
+    },
+    {
+      title: 'premium',
+      price: 199,
+      period: 'per month',
+      items: [
+        {
+          description: 'Curabitur suscipit risus',
+        },
+        {
+          description: 'Aliquam blandit malesuada',
+        },
+        {
+          description: 'Suspendisse sit amet',
+        },
+        {
+          description: 'Suspendisse auctor dui',
+        },
+      ],
+      callToAction: {
+        targetBlank: true,
+        text: 'Free 30-day trial',
+        href: '/',
+      },
+      hasRibbon: false,
+    },
+  ],
 };
 
 // FAQS data on Services page *******************
