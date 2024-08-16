@@ -1,7 +1,7 @@
 'use client';
 
 import { footerData2 } from '~/shared/data/global.data';
-import { useCookieConsent } from '~/utils/cookie';
+import { useCookieConsent } from '~/hooks/useCookieConsent';
 
 const Footer2 = () => {
   const { links, columns } = footerData2;

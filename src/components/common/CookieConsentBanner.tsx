@@ -1,5 +1,5 @@
 'use client';
-import { useCookieConsent } from '~/utils/cookie';
+import { useCookieConsent } from '~/hooks/useCookieConsent';
 
 export default function CookieConsentBanner() {
   const [consentState, setConsentState] = useCookieConsent();
