@@ -9,7 +9,7 @@ const Pricing = ({ header, prices, id, hasBackground = false }: PricingProps) =>
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="">
     {header && <Headline header={header} containerClass="max-w-5xl" titleClass="text-2xl sm:text-3xl" />}
     <div className="flex items-stretch justify-center">
-      <div className="grid grid-cols-3 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 dark:text-white sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">
         {prices &&
           prices.map(
             ({ title, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }, index) => (

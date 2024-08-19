@@ -18,7 +18,7 @@ export default function Page({ searchParams }: PageProps) {
       title={'Thanks for your order!'}
       subtitle={
         <>
-          <p>We'll be in touch within 24 hours to onboard your account and get you up and running.</p>
+          <p>We&apos;ll be in touch within 24 hours to onboard your account and get you up and running.</p>
           <br />
           <p>
             In the meantime, feel free to reach out to us at{' '}

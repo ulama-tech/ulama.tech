@@ -1,9 +1,25 @@
-import { ChevronsRightIcon, FlowerIcon } from 'lucide-react';
+import {
+  AccessibilityIcon,
+  BathIcon,
+  ChevronsRightIcon,
+  FlowerIcon,
+  GlassWaterIcon,
+  ParkingCircleIcon,
+} from 'lucide-react';
 
-import { CallToActionProps, ContentProps, FAQsProps, HeroProps, PricingProps, TestimonialsProps } from '~/shared/types';
+import {
+  CallToActionProps,
+  FeaturesProps,
+  ContentProps,
+  FAQsProps,
+  HeroProps,
+  PricingProps,
+  TestimonialsProps,
+} from '~/shared/types';
 
-import heroImg from '~/assets/images/hero.jpg';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
+
+const BUY_NOW_URL = 'https://buy.stripe.com/7sI7vu4kn5VzbCw7ss';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
@@ -12,40 +28,31 @@ export const heroServices: HeroProps = {
       Introducing Ulama Rose <FlowerIcon className="h-10 w-10" />
     </div>
   ),
-  subtitle:
-    'Donec aliquam pharetra nibh quis vestibulum. Praesent hendrerit sem at lacus ullamcorper egestas. Morbi lacinia ipsum in nulla gravida, ac sagittis turpis pretium. ',
+  subtitle: 'A Revit family by any other name.',
   callToAction: {
     text: 'Buy Now',
-    href: 'https://buy.stripe.com/7sI7vu4kn5VzbCw7ss',
-    targetBlank: true,
+    href: BUY_NOW_URL,
   },
-  // image: {
-  //   src: heroImg,
-  //   alt: 'Hero TailNext',
-  // },
 };
 
 // Content data on Services page *******************
-export const contentServicesOne: ContentProps = {
+export const contentRoseOne: ContentProps = {
   id: 'contentOne-on-services-one',
   hasBackground: false,
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Missing classification data? With Rose, updating your Revit model is a snap. Rose uses a multimodal AI model to evaluate your Revit families and family instances and updates them with a new normalized name parameter. After consistently classifying your Revit families and normalizing your data, unlock:',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
-      description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+      title: 'Accurate and easy quantity and material takeoff',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
-      description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+      title: 'Improved schedules and reporting',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-      description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+      title: 'Up to date and easily accessible BIM data content, organized by normalized name',
+    },
+    {
+      title: 'Granular project visualizations sliced by detailed classification',
     },
   ],
   image: {
@@ -54,6 +61,26 @@ export const contentServicesOne: ContentProps = {
   },
   isReversed: true,
   isAfterContent: false,
+};
+
+export const featuresRoseOne: FeaturesProps = {
+  header: {
+    title: 'Supported Family Types',
+    subtitle:
+      "Additional families are coming soon. Let us know which families you'd like to see next! Email us at hello@ulama.tech.",
+  },
+  columns: 3,
+  items: [
+    { title: 'Parking stalls', icon: ParkingCircleIcon },
+    { title: 'Ramps', icon: AccessibilityIcon },
+    { title: 'Stairs', icon: AccessibilityIcon },
+    { title: 'Stair handrails', icon: AccessibilityIcon },
+    { title: 'Drinking fountains', icon: GlassWaterIcon },
+    { title: 'Toilets', icon: BathIcon },
+    { title: 'Urinals', icon: BathIcon },
+    { title: 'Mirrors', icon: BathIcon },
+    { title: 'Bathroom grab bars', icon: BathIcon },
+  ],
 };
 
 // Testimonials data on Services page *******************
@@ -109,87 +136,34 @@ export const pricingHome: PricingProps = {
   id: 'pricing-on-rose',
   hasBackground: true,
   header: {
-    title: 'Prices for each plan',
-    subtitle:
-      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-    // tagline: 'Pricing',
+    title: 'One simple price for early adopters',
+    subtitle: 'We thank you for joining us!.',
   },
   prices: [
     {
-      title: 'basic',
-      price: 29,
-      period: 'per month',
-      items: [
-        {
-          description: 'Etiam in libero, et volutpat',
-        },
-        {
-          description: 'Aenean ac nunc dolor tristique',
-        },
-        {
-          description: 'Cras scelerisque accumsan lib',
-        },
-        {
-          description: 'In hac habitasse',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 7-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
-    },
-    {
       title: 'standard',
-      price: 69,
+      price: 5,
       period: 'per month',
-      items: [
-        {
-          description: 'Proin vel laoreet',
-        },
-        {
-          description: 'Ut efficitur egestas',
-        },
-        {
-          description: 'Pellentesque ut nibh',
-        },
-        {
-          description: 'Donec fringilla sem',
-        },
-      ],
+      // items: [
+      //   {
+      //     description: 'Proin vel laoreet',
+      //   },
+      //   {
+      //     description: 'Ut efficitur egestas',
+      //   },
+      //   {
+      //     description: 'Pellentesque ut nibh',
+      //   },
+      //   {
+      //     description: 'Donec fringilla sem',
+      //   },
+      // ],
       callToAction: {
-        targetBlank: true,
         text: 'Free 15-day trial',
-        href: '/',
+        href: BUY_NOW_URL,
       },
       hasRibbon: true,
       ribbonTitle: 'Popular',
-    },
-    {
-      title: 'premium',
-      price: 199,
-      period: 'per month',
-      items: [
-        {
-          description: 'Curabitur suscipit risus',
-        },
-        {
-          description: 'Aliquam blandit malesuada',
-        },
-        {
-          description: 'Suspendisse sit amet',
-        },
-        {
-          description: 'Suspendisse auctor dui',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 30-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
     },
   ],
 };
@@ -199,30 +173,18 @@ export const faqsServices: FAQsProps = {
   id: 'faqs-on-services',
   hasBackground: true,
   header: {
-    title: 'Answers to Common Queries',
-    subtitle:
-      'Etiam laoreet mi eros, vitae iaculis mi egestas blandit. Sed nisl diam, congue sed justo et, cursus sollicitudin ligula.',
+    title: 'Frequently Asked Questions',
   },
   columns: 1,
   items: [
     {
-      title: 'Can I customize the templates to match my brand?',
-      description: `Ut accumsan, massa at sagittis maximus, libero justo rhoncus metus, quis finibus neque justo quis nisi. Suspendisse sed sapien et justo iaculis faucibus.`,
+      title: 'How does Rose work?',
+      description: `Rose uses a multimodal AI model that looks at each Revit family and family instance, updating each with a standardized name set on a custom parameter. Unlike other approaches, we look at the way your family instance appears, just like you would. If it walks like a toilet, talks like a toilet, and quacks like a toilet, then it’s a toilet.`,
       icon: ChevronsRightIcon,
     },
     {
-      title: 'What if I need help customizing the template?',
-      description: `Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent imperdiet ultricies ex consequat egestas.`,
-      icon: ChevronsRightIcon,
-    },
-    {
-      title: 'Are there setup guides available?',
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
-      icon: ChevronsRightIcon,
-    },
-    {
-      title: 'Can I hire you for template customization?',
-      description: `Phasellus est quam, mollis tincidunt dictum pulvinar, tempor vel justo. Mauris eu lobortis leo. Proin pretium arcu lectus, a mattis nisi fermentum quis.`,
+      title: 'How do you use my data?',
+      description: `We use your project information to generate normalized names only. We do not store any of your data at any point. We do not transmit your Revit models. The limited project data we do evaluate with AI is not used for any training purposes. `,
       icon: ChevronsRightIcon,
     },
   ],
@@ -233,10 +195,9 @@ export const callToActionServices: CallToActionProps = {
   id: 'callToAction-on-services',
   hasBackground: false,
   title: 'Still have questions?',
-  subtitle:
-    'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut in leo odio. Cras finibus ex a ante convallis ullamcorper.',
+  subtitle: 'Feel free to reach out to us! We are happy to help you with any questions or concerns you may have.',
   callToAction: {
     text: 'Contact us',
-    href: '/contact',
+    href: 'mailto:hello@ulama.tech',
   },
 };
