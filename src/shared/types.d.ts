@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 import React, { ReactElement } from 'react';
-import { Icon } from 'lucide-react';
+import { IconNode } from 'lucide-react';
 
 type Widget = {
   id?: string;
@@ -32,7 +32,7 @@ type HeadlineProps = {
   subtitleClass?: string;
 };
 
-type Icon = typeof Icon;
+type Icon = typeof IconNode;
 
 type CallToActionType = {
   text?: string;

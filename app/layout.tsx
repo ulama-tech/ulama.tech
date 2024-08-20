@@ -43,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <Providers>
           <PostHogPageView />
           <CookieConsentBanner />
-          {/* <Announcement /> */}
+          <Announcement />
           <Header />
           <main>{children}</main>
           <Footer2 />
