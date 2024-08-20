@@ -18,7 +18,7 @@ export default function Page({ searchParams }: PageProps) {
       title={'Thanks for your order!'}
       subtitle={
         <>
-          <p>We&apos;ll be in touch within 24 hours to onboard your account and get you up and running.</p>
+          <p>Your account is all set! Download the latest build and get to work:</p>
           <br />
           <p>
             In the meantime, feel free to reach out to us at{' '}
@@ -27,6 +27,10 @@ export default function Page({ searchParams }: PageProps) {
             </a>{' '}
             if you have any questions or concerns.
           </p>
+          <br />
+          <a className="btn btn-primary" href="https://ulama-releases.s3.amazonaws.com/ulama-rose-1bc41fa.zip">
+            Download Now
+          </a>
         </>
       }
       image={{ src: GasImage, alt: 'Gas pump' }}
