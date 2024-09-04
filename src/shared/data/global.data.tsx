@@ -12,51 +12,53 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
   callToAction: {
-    text: 'This template is made with Next.js 14 using the new App Router »',
-    href: 'https://nextjs.org/blog/next-14',
-  },
-  callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
+    text: 'Announcing Rose, the easiest way to standardize names in your Revit models. »',
+    href: '/products/rose',
+    targetBlank: false,
   },
 };
 
 // Header data
 export const headerData: HeaderProps = {
   links: [
+    // {
+    //   label: 'Pages',
+    //   icon: ChevronDownIcon,
+    //   links: [
+    //     {
+    //       label: 'Services',
+    //       href: '/services',
+    //     },
+    //     {
+    //       label: 'Pricing',
+    //       href: '/pricing',
+    //     },
+    //     {
+    //       label: 'About us',
+    //       href: '/about',
+    //     },
+    //     {
+    //       label: 'Contact us',
+    //       href: '/contact',
+    //     },
+    //     {
+    //       label: 'FAQs',
+    //       href: '/faqs',
+    //     },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //   ],
+    // },
     {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Services',
-          href: '/services',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-      ],
+      label: 'Products',
+      icon: ChevronDownIcon,
+      links: [{ label: 'Rose', href: '/products/rose' }],
     },
     {
       label: 'Blog',
