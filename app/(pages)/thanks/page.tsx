@@ -28,7 +28,7 @@ export default function Page({ searchParams }: PageProps) {
             if you have any questions or concerns.
           </p>
           <br />
-          <a className="btn btn-primary" href="https://ulama-releases.s3.amazonaws.com/ulama-rose-1bc41fa.zip">
+          <a className="btn btn-primary" href="https://ulama-releases.s3.amazonaws.com/ulama-rose-380019a.zip">
             Download Now
           </a>
         </>
