@@ -11,6 +11,7 @@ const Content = ({
   content,
   items,
   image,
+  media,
   isReversed,
   isAfterContent,
   id,
@@ -52,6 +53,7 @@ const Content = ({
               />
             </div>
           )}
+          {media && <div className="relative m-auto max-w-4xl">{media}</div>}
         </div>
       </div>
     </div>

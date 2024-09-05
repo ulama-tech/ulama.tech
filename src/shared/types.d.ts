@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import React, { ReactElement } from 'react';
+import React, { ReactElement, ReactNode } from 'react';
 import { IconNode } from 'lucide-react';
 
 type Widget = {
@@ -282,6 +282,7 @@ type ContentProps = Widget & {
   content?: string;
   items?: Array<Item>;
   image?: Image;
+  media?: ReactNode;
   isReversed?: boolean;
   isAfterContent?: boolean;
 };

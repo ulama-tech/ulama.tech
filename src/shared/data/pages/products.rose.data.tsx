@@ -55,10 +55,20 @@ export const contentRoseOne: ContentProps = {
       title: 'Granular project visualizations sliced by detailed classification',
     },
   ],
-  image: {
-    src: cameraFrontImg,
-    alt: 'Colorful Image',
-  },
+  media: (
+    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+      <iframe
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+        src="https://www.tella.tv/video/cm0pps4ow000303jl7tu52paz/embed?b=0&title=0&a=0&loop=0&t=0&muted=0&wt=0"
+        allowFullScreen
+        allowTransparency
+      >
+        <a href="https://www.tella.tv/video/cm0pps4ow000303jl7tu52paz/view">
+          Watch Ulama Rose demo in Tella screen recorder
+        </a>
+      </iframe>
+    </div>
+  ),
   isReversed: true,
   isAfterContent: false,
 };
