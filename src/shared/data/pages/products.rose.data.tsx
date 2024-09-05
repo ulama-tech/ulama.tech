@@ -8,14 +8,7 @@ import {
   TriangleRight,
 } from 'lucide-react';
 
-import {
-  Stairs,
-  Toilet,
-  Urinal,
-  Mirror,
-  ClimbStairsUser,
-  BalanceBeam,
-} from '@vectopus/atlas-icons-react'
+import { Stairs, Toilet, Urinal, Mirror, ClimbStairsUser, BalanceBeam } from '@vectopus/atlas-icons-react';
 
 import {
   CallToActionProps,
@@ -73,9 +66,7 @@ export const contentRoseOne: ContentProps = {
         allowFullScreen
         allowTransparency
       >
-        <a href="https://www.tella.tv/video/cm0pps4ow000303jl7tu52paz/view">
-          Watch Ulama Rose demo
-        </a>
+        <a href="https://www.tella.tv/video/cm0pps4ow000303jl7tu52paz/view">Watch Ulama Rose demo</a>
       </iframe>
     </div>
   ),
@@ -156,7 +147,7 @@ export const pricingHome: PricingProps = {
   id: 'pricing-on-rose',
   hasBackground: true,
   header: {
-    title: 'One simple price for early adopters'
+    title: 'One simple price for early adopters',
   },
   prices: [
     {
@@ -214,6 +205,7 @@ export const callToActionServices: CallToActionProps = {
   id: 'callToAction-on-services',
   hasBackground: false,
   title: 'Still have questions?',
+  subtitle: '',
   callToAction: {
     text: 'Drop us a line!',
     href: 'mailto:hello@ulama.tech',

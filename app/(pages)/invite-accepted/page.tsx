@@ -27,7 +27,8 @@ const Page = () => {
         description: (
           <>
             We&apos;re currently in a private alpha, so we don&apos;t distribute public links to download the installer.
-            We'll be in touch soon, but reach out to us at <a href="mailto:hello@ulama.tech">hello@ulama.tech</a> in the meantime.
+            We&apos;ll be in touch soon, but reach out to us at <a href="mailto:hello@ulama.tech">hello@ulama.tech</a>{' '}
+            in the meantime.
           </>
         ),
       },
