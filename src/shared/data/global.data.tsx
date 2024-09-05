@@ -48,11 +48,11 @@ export const headerData: HeaderProps = {
     //     },
     //   ],
     // },
-    // {
-    //   label: 'Products',
-    //   icon: ChevronDownIcon,
-    //  links: [{ label: 'Rose', href: '/products/rose' }],
-    // },
+    {
+      label: 'Products',
+      icon: ChevronDownIcon,
+      links: [{ label: 'Rose', href: '/products/rose' }],
+    },
     {
       label: 'Blog',
       href: 'https://blog.ulama.tech/',

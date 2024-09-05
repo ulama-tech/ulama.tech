@@ -156,8 +156,7 @@ export const pricingHome: PricingProps = {
   id: 'pricing-on-rose',
   hasBackground: true,
   header: {
-    title: 'One simple price for early adopters',
-    subtitle: 'We thank you for joining us!.',
+    title: 'One simple price for early adopters'
   },
   prices: [
     {
@@ -215,9 +214,8 @@ export const callToActionServices: CallToActionProps = {
   id: 'callToAction-on-services',
   hasBackground: false,
   title: 'Still have questions?',
-  subtitle: 'Drop us a line!',
   callToAction: {
-    text: 'Contact us',
+    text: 'Drop us a line!',
     href: 'mailto:hello@ulama.tech',
   },
 };
