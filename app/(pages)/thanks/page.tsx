@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Hero2 from '~/components/widgets/Hero2';
-import GasImage from '~/assets/images/gas.jpg';
+import BIMRoses from '~/assets/images/bim_roses.jpg';
 
 export const metadata: Metadata = {
   title: 'Thanks!',
@@ -18,10 +18,10 @@ export default function Page({ searchParams }: PageProps) {
       title={'Thanks for your order!'}
       subtitle={
         <>
-          <p>Your account is all set! Download the latest build and get to work:</p>
+          <p>Your account is all set! Download Rose and get started.</p>
           <br />
           <p>
-            In the meantime, feel free to reach out to us at{' '}
+            Reach out to us at{' '}
             <a className="font-semibold" href="mailto:hello@ulama.tech">
               hello@ulama.tech
             </a>{' '}
@@ -33,7 +33,7 @@ export default function Page({ searchParams }: PageProps) {
           </a>
         </>
       }
-      image={{ src: GasImage, alt: 'Gas pump' }}
+      image={{ src: BIMRoses, alt: 'A building composed of Roses' }}
     />
   );
 }

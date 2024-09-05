@@ -13,7 +13,7 @@ const Page = () => {
       Your account is active, and you can now log in within the plugin.
       <br />
       <br />
-      We&apos;re thrilled to have you, and thanks for your help!
+      We&apos;re thrilled to work with you, and thanks for your help!
     </>
   );
 
@@ -27,9 +27,7 @@ const Page = () => {
         description: (
           <>
             We&apos;re currently in a private alpha, so we don&apos;t distribute public links to download the installer.
-            Reach out to <a href="mailto:hello@ulama.tech">hello@ulama.tech</a> (or{' '}
-            <a href="mailto:max@ulama.tech">Max</a> or <a href="mailto:tyce@ulama.tech">Tyce</a>) and we&apos;ll help
-            you out.
+            We'll be in touch soon, but reach out to us at <a href="mailto:hello@ulama.tech">hello@ulama.tech</a> in the meantime.
           </>
         ),
       },
@@ -37,7 +35,7 @@ const Page = () => {
         title: 'What versions of Revit do you support?',
         description: (
           <>
-            We currently support Revit 2021-2025. If you need an additional version supported,{' '}
+            We currently support Revit 2021-2024. If you need an additional version supported,{' '}
             <a href="mailto:hello@ulama.tech">let us know</a>.
           </>
         ),

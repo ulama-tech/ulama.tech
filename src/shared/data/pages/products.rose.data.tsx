@@ -5,7 +5,17 @@ import {
   FlowerIcon,
   GlassWaterIcon,
   ParkingCircleIcon,
+  TriangleRight,
 } from 'lucide-react';
+
+import {
+  Stairs,
+  Toilet,
+  Urinal,
+  Mirror,
+  ClimbStairsUser,
+  BalanceBeam,
+} from '@vectopus/atlas-icons-react'
 
 import {
   CallToActionProps,
@@ -25,7 +35,7 @@ const BUY_NOW_URL = 'https://buy.stripe.com/7sI7vu4kn5VzbCw7ss';
 export const heroServices: HeroProps = {
   title: (
     <div className="flex items-center justify-center gap-2">
-      Introducing Ulama Rose <FlowerIcon className="h-10 w-10" />
+      Introducing Rose <FlowerIcon className="h-10 w-10" />
     </div>
   ),
   subtitle: 'A Revit family by any other name.',
@@ -40,7 +50,7 @@ export const contentRoseOne: ContentProps = {
   id: 'contentOne-on-services-one',
   hasBackground: false,
   content:
-    'Missing classification data? With Rose, updating your Revit model is a snap. Rose uses a multimodal AI model to evaluate your Revit families and family instances and updates them with a new normalized name parameter. After consistently classifying your Revit families and normalizing your data, unlock:',
+    'Missing or inconsistent classification data? With Rose, updating your Revit model is a snap. Rose uses a multimodal AI model to evaluate your Revit families and family instances, updating them with a new normalized name parameter.  With consistently named elements, unlock:',
   items: [
     {
       title: 'Accurate and easy quantity and material takeoff',
@@ -49,10 +59,10 @@ export const contentRoseOne: ContentProps = {
       title: 'Improved schedules and reporting',
     },
     {
-      title: 'Up to date and easily accessible BIM data content, organized by normalized name',
+      title: 'Easily accessible BIM data content, organized by normalized name',
     },
     {
-      title: 'Granular project visualizations sliced by detailed classification',
+      title: 'Model visualizations with element classification filters',
     },
   ],
   media: (
@@ -64,7 +74,7 @@ export const contentRoseOne: ContentProps = {
         allowTransparency
       >
         <a href="https://www.tella.tv/video/cm0pps4ow000303jl7tu52paz/view">
-          Watch Ulama Rose demo in Tella screen recorder
+          Watch Ulama Rose demo
         </a>
       </iframe>
     </div>
@@ -77,19 +87,19 @@ export const featuresRoseOne: FeaturesProps = {
   header: {
     title: 'Supported Family Types',
     subtitle:
-      "Additional families are coming soon. Let us know which families you'd like to see next! Email us at hello@ulama.tech.",
+      "Additional families are coming soon. Email us at hello@ulama.tech with the families you'd like to see next!",
   },
   columns: 3,
   items: [
     { title: 'Parking stalls', icon: ParkingCircleIcon },
-    { title: 'Ramps', icon: AccessibilityIcon },
-    { title: 'Stairs', icon: AccessibilityIcon },
-    { title: 'Stair handrails', icon: AccessibilityIcon },
+    { title: 'Ramps', icon: TriangleRight },
+    { title: 'Stairs', icon: Stairs },
+    { title: 'Stair handrails', icon: ClimbStairsUser },
     { title: 'Drinking fountains', icon: GlassWaterIcon },
-    { title: 'Toilets', icon: BathIcon },
-    { title: 'Urinals', icon: BathIcon },
-    { title: 'Mirrors', icon: BathIcon },
-    { title: 'Bathroom grab bars', icon: BathIcon },
+    { title: 'Toilets', icon: Toilet },
+    { title: 'Urinals', icon: Urinal },
+    { title: 'Mirrors', icon: Mirror },
+    { title: 'Bathroom grab bars', icon: BalanceBeam },
   ],
 };
 
@@ -189,12 +199,12 @@ export const faqsServices: FAQsProps = {
   items: [
     {
       title: 'How does Rose work?',
-      description: `Rose uses a multimodal AI model that looks at each Revit family and family instance, updating each with a standardized name set on a custom parameter. Unlike other approaches, we look at the way your family instance appears, just like you would. If it walks like a toilet, talks like a toilet, and quacks like a toilet, then it’s a toilet.`,
+      description: `Rose uses a multimodal AI model that looks at each Revit family and family instance, updating each with a standardized name in a custom parameter. Unlike other approaches, Rose uses computer vision to understand elements just like you would.`,
       icon: ChevronsRightIcon,
     },
     {
       title: 'How do you use my data?',
-      description: `We use your project information to generate normalized names only. We do not store any of your data at any point. We do not transmit your Revit models. The limited project data we do evaluate with AI is not used for any training purposes. `,
+      description: `Only the minimum required Revit model data is used to generate normalized names. We do not store any of your data at any point or transmit your Revit models. The limited project data we do evaluate with AI is not used for any training purposes.`,
       icon: ChevronsRightIcon,
     },
   ],
@@ -205,7 +215,7 @@ export const callToActionServices: CallToActionProps = {
   id: 'callToAction-on-services',
   hasBackground: false,
   title: 'Still have questions?',
-  subtitle: 'Feel free to reach out to us! We are happy to help you with any questions or concerns you may have.',
+  subtitle: 'Drop us a line!',
   callToAction: {
     text: 'Contact us',
     href: 'mailto:hello@ulama.tech',

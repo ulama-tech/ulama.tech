@@ -5,7 +5,7 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
   callToAction: {
-    text: 'Announcing Ulama Rose, the easiest way to standardize family names in your Revit projects. »',
+    text: 'Announcing Rose, the easiest way to standardize names in your Revit models. »',
     href: '/products/rose',
     targetBlank: false,
   },
