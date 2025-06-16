@@ -32,7 +32,7 @@ import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 import tyceImg from '~/assets/images/tyce.jpeg';
-import maxImg from '~/assets/images/max.jpeg';
+import leulImg from '~/assets/images/leul.jpeg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -474,27 +474,27 @@ export const teamHome: TeamProps = {
       ],
     },
     {
-      name: 'Max Dumas',
+      name: 'Leul Tesfaye',
       occupation: 'CTO',
       image: {
-        src: maxImg,
-        alt: 'Max Dumas',
+        src: leulImg,
+        alt: 'Leul Tesfaye',
       },
       items: [
         {
           title: 'Know more on Linkedin',
           icon: LinkedinIcon,
-          href: 'https://www.linkedin.com/in/maximilliandumas/',
+          href: 'https://www.linkedin.com/in/leul-tesfaye/',
         },
         {
           title: 'Know more on GitHub',
           icon: GithubIcon,
-          href: 'https://github.com/maxdumas',
+          href: 'https://github.com/Ltesfaye',
         },
         {
           title: 'Contact by email',
           icon: MailIcon,
-          href: 'mailto:max@ulama.tech',
+          href: 'mailto:leul@ulama.tech',
         },
       ],
     },
