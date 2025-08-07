@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import logoSrcLight from '../../assets/images/ulama_logo_441151_optimized.svg';
-import logoSrcDark from '../../assets/images/ulama_logo_eef0f2_optimized.svg';
+import logoSrcLight from '../../assets/images/ulama_logo.svg';
+import logoSrcDark from '../../assets/images/ulama_logo.svg';
 import { useTheme } from 'next-themes';
 
 const Logo = () => {
@@ -9,8 +9,8 @@ const Logo = () => {
   const logoSrc = currentTheme === 'dark' ? logoSrcDark : logoSrcLight;
 
   return (
-    <span className="ml-2 self-center whitespace-nowrap text-xl font-lora text-gray-900 dark:text-white md:text-xl">
-      <Image priority src={logoSrc} alt="Logo" height={48} style={{ display: 'inline-block' }} /> ulama
+    <span className="ml-1 self-center whitespace-nowrap text-xl font-dm-sans font-bold text-white dark:text-white md:text-2xl">
+      <Image priority src={logoSrc} alt="Logo" height={30} style={{ display: 'inline-block' }} /> Ulama
     </span>
   );
 };

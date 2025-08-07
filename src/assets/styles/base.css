@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --Primary: #702DE5;
+  --Secondary-Orange: #FE7F2D;
+  --primary-text-black: #000000;
+  --primary-text-white: #FFFFFF;
+}
+
 @layer components {
   .btn {
     @apply inline-flex items-center justify-center rounded-md border border-gray-400 hover:border-gray-600 dark:border-slate-500 dark:hover:border-slate-700 bg-white dark:bg-transparent hover:bg-gray-100 dark:hover:bg-slate-700 text-center text-base text-gray-700 dark:text-slate-300 dark:hover:text-white font-medium leading-snug shadow-md hover:shadow-none transition duration-200 ease-in focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 py-3 px-6 md:px-8;
@@ -12,7 +19,11 @@
   }
 
   .btn-primary {
-    @apply border-primary-600 dark:border-primary-700 hover:border-primary-800 dark:hover:border-primary-900 bg-primary-600 dark:bg-primary-700 hover:bg-primary-800 dark:hover:bg-primary-900 font-semibold text-white dark:text-white hover:text-white;
+    @apply border-primary bg-primary hover:opacity-90 font-semibold text-primary-text-white;
+  }
+
+  .btn-secondary {
+    @apply border-secondary bg-secondary hover:opacity-90 font-semibold text-primary-text-white;
   }
 
   .card {

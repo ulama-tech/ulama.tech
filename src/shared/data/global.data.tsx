@@ -49,9 +49,17 @@ export const headerData: HeaderProps = {
     //   ],
     // },
     {
-      label: 'Products',
-      icon: ChevronDownIcon,
-      links: [{ label: 'Rose', href: '/products/rose' }],
+      label: 'Why Ulama',
+
+      href: "#why",
+    },
+    {
+      label: 'Features',
+      href: '#features',
+    },
+    {
+      label: 'Team',
+      href: '#team',
     },
     {
       label: 'Blog',
