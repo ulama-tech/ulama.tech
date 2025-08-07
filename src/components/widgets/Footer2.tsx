@@ -31,7 +31,7 @@ const Footer2 = () => {
             </div>
 
             <div className="relative">
-              <div className="relative z-10 w-96">
+              <div className="relative z-10 w-82 md:w-96">
                 <Image
                   src={footerimg}
                   alt="Building illustration"
@@ -85,7 +85,7 @@ const Footer2 = () => {
               </div>
             </div>
 
-            <div className='flex gap-16'>
+            <div className='flex flex-col md:flex-row gap-8 md:gap-16'>
 
               <div>
                 <h3 className="text-xl font-semibold mb-6 opacity-75">Company</h3>
