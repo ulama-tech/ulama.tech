@@ -25,6 +25,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-6 text-md sm:text-lg text-white/80 font-dm-sans leading-none max-w-lg">
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               With Ulama's AI-powered, lightning-fast compliance checks,
               designs are approved in record time, and permits are issued
               3 months faster on average.

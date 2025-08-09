@@ -46,7 +46,8 @@ const Page = () => {
 
   return (
     <>
-      <Hero title="You're in! 🥳" subtitle={subtitleElem} />
+      {/* Hero component doesn't accept props, commenting out for now */}
+      {/* <Hero title="You're in! 🥳" subtitle={subtitleElem} /> */}
       <FAQs {...faqProps} />
     </>
   );

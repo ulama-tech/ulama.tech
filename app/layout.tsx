@@ -10,14 +10,11 @@ import '~/assets/styles/base.css';
 
 import dynamic from 'next/dynamic';
 import Footer2 from '~/components/widgets/Footer2';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const loraFont = Lora({ subsets: ['latin'], variable: '--font-lora' });
 const dmSansFont = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
 const ibmPlexMonoFont = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-ibm-mono' });
-
-const PostHogPageView = dynamic(() => import('../src/components/PostHogPageView'), {
-  ssr: false,
-});
 
 const CookieConsentBanner = dynamic(() => import('../src/components/common/CookieConsentBanner'), { ssr: false });
 
@@ -47,13 +44,13 @@ export default function RootLayout({ children }: LayoutProps) {
       </head>
       <body className="tracking-tight antialiased text-gray-900 dark:text-slate-300">
         <Providers>
-          <PostHogPageView />
           {/* <CookieConsentBanner />
           <Announcement />  */}
           <Header />
           <main>{children}</main>
           <Footer2 />
         </Providers>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
       </body>
     </html>
   );

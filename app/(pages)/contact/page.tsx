@@ -12,7 +12,8 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <Hero {...heroContact} />
+      {/* Hero component doesn't accept props, commenting out for now */}
+      {/* <Hero {...heroContact} /> */}
       <Contact2 {...contact2Contact} />
       <Features2 {...features2Contact} />
     </>

@@ -65,6 +65,7 @@ const WhyUlama = () => {
                             }}
                         >
                             {/* Image Placeholder */}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src={challenge.imageUrl}
                                 alt={challenge.title}
