@@ -49,7 +49,7 @@ const Hero = () => {
                 />
               </div>
 
-              <div className="absolute top-10 right-30 w-80 h-[30rem]  ">
+              <div className="absolute top-10 right-30 2xl:right-72 w-80 h-[30rem]  ">
                 <Image
                   src={heroImage2}
                   alt="Design approval dashboard"
