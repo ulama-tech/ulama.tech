@@ -3,6 +3,7 @@ import Image from 'next/image';
 import bgNet from '~/assets/images/bg-net.svg';
 import heroImage1 from '~/assets/images/hero-image-1-u.png';
 import heroImage2 from '~/assets/images/hero-image-2-u.png';
+import Button from '~/components/ui/Button';
 
 const Hero = () => {
   return (
@@ -32,9 +33,9 @@ const Hero = () => {
             </p>
 
             <div className="mt-8">
-              <button className="bg-secondary text-white font-medium py-2 px-8 rounded-md hover:bg-orange-500 transition-all duration-200 ease-in-out whitespace-nowrap shadow-orange-glow w-full md:w-auto">
+              <Button variant="primary" size="lg">
                 Get Started
-              </button>
+              </Button>
             </div>
           </div>
 

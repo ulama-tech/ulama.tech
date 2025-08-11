@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import footerimg from '~/assets/images/footerimg.png';
 import logoSrc from '~/assets/images/ulama_logo.svg';
+import Button from '~/components/ui/Button';
 const Footer2 = () => {
   return (
     <div className="bg-primary text-primary-text-white">
@@ -20,13 +21,13 @@ const Footer2 = () => {
                 .
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-secondary text-white px-10 py-2 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-all duration-300 shadow-orange-glow">
+                <Button variant="primary" size="lg">
                   Book a Demo
-                </button>
+                </Button>
 
-                <button className="border-2 border-white text-white px-10 py-2 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                <Button variant="secondary" size="lg">
                   Contact Us
-                </button>
+                </Button>
               </div>
             </div>
 
