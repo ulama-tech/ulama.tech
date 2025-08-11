@@ -6,8 +6,8 @@ import heroImage2 from '~/assets/images/hero-image-2-u.png';
 
 const Hero = () => {
   return (
-    <section id="heroOne" className="relative bg-primary overflow-hidden">
-      <div className="absolute inset-0 opacity-30">
+    <section id="heroOne" className="relative bg-primary overflow-hidden ">
+      <div className="absolute inset-0 opacity-30 max-w-[100rem]">
         <Image
           src={bgNet}
           alt="Background pattern"
@@ -16,7 +16,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 mx-auto px-8 lg:px-0 lg:pl-24 py-12 lg:py-28">
+      <div className="relative z-10 mx-auto px-8 lg:px-0 lg:pl-24 py-12 lg:py-28 max-w-[100rem]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-left">
             <h1 className="font-dm-sans text-3xl sm:text-4xl lg:text-4xl xl:text-6xl font-semibold text-primary-text-white leading-tight">
@@ -24,8 +24,8 @@ const Hero = () => {
               <span className="text-[#2DE1C2]">speed of design</span>
             </h1>
 
-            <p className="mt-6 text-md sm:text-lg text-white/80 font-dm-sans leading-none max-w-lg">
-              With Ulama's AI-powered, lightning-fast compliance checks,
+            <p className="mt-6 text-md sm:text-lg text-white/90 font-dm-sans leading-normal max-w-lg">
+              With Ulama&apos;s AI-powered, lightning-fast compliance checks,
               designs are approved in record time, and permits are issued
               3 months faster on average.
             </p>
@@ -44,7 +44,7 @@ const Hero = () => {
                   src={heroImage1}
                   alt="Code compliance interface"
                   fill
-                  className="object-contain rounded-lg "
+                  className="object-contain rounded-lg scale-110 "
                 />
               </div>
 
@@ -53,7 +53,7 @@ const Hero = () => {
                   src={heroImage2}
                   alt="Design approval dashboard"
                   fill
-                  className="object-contain rounded-lg "
+                  className="object-contain rounded-lg scale-110 "
                 />
               </div>
             </div>

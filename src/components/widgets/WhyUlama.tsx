@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import increasedCostsImage from '../../assets/images/increased-costs.png';
 import complexRegulatoryRequirementsImage from '../../assets/images/complex-regulatory.png';
 import legalComplianceRisksImage from '../../assets/images/legal-risks.png';
@@ -65,9 +66,11 @@ const WhyUlama = () => {
                             }}
                         >
                             {/* Image Placeholder */}
-                            <img
+                            <Image
                                 src={challenge.imageUrl}
                                 alt={challenge.title}
+                                width={400}
+                                height={300}
                                 className="w-full h-full object-cover rounded-lg mb-3"
                             />
                             {/* Title */}

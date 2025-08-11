@@ -17,11 +17,11 @@ const WhyUs2 = () => {
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                            Here's what Ulama can help you achieve
+                            Here&apos;s what Ulama can help you achieve
                         </h2>
 
                         <p className="text-lg sm:text-xl text-purple-100 leading-relaxed">
-                            We're building Ulama to take the pain out of compliance—so your team can focus on designing great buildings and delivering better outcomes for your clients.
+                            We&apos;re building Ulama to take the pain out of compliance—so your team can focus on designing great buildings and delivering better outcomes for your clients.
                         </p>
                     </div>
 
