@@ -202,6 +202,7 @@ type Column = {
 
 type MenuLink = Link & {
   links?: Array<Link>;
+  isInternal?: boolean;
 };
 
 type Links = {

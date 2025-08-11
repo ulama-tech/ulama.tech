@@ -8,6 +8,7 @@ import ToggleMenu from '../atoms/ToggleMenu';
 import { headerData } from '~/shared/data/global.data';
 import CTA from '../common/CTA';
 import { CallToActionType } from '~/shared/types';
+import { scrollToSection, getHeaderHeight } from '~/utils/scroll';
 
 const Header = () => {
   const { links, actions, isSticky, position } = headerData;
@@ -47,13 +48,27 @@ const Header = () => {
     setIsToggleMenuOpen(!isToggleMenuOpen);
   };
 
+  const handleInternalNavigation = (href: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    const headerHeight = getHeaderHeight();
+    scrollToSection(href, headerHeight);
+
+    // Close mobile menu if open
+    if (isToggleMenuOpen) {
+      setIsToggleMenuOpen(false);
+    }
+
+    // Close any open dropdowns
+    setIsDropdownOpen(updatedIsDropdownOpen as boolean[]);
+  };
+
   return (
     <header
       className={`top-0 z-50  w-full md:px-8 flex-none bg-primary transition-all duration-100 ease-in dark:bg-primary  md:backdrop-blur-lg  ${isSticky ? 'sticky' : 'relative'
         } border-b-2 border-white/10`}
       id="header"
     >
-      <div className="mx-auto w-full  py-2 px-3 md:flex md:justify-between md:py-2 md:px-4">
+      <div className="mx-auto w-full  py-2 px-3 md:flex md:justify-between md:py-2 md:px-4 max-w-[100rem]">
         <div className="flex justify-between">
           <Link
             className="flex items-center"
@@ -89,7 +104,7 @@ const Header = () => {
               >
                 <ul className="flex w-full flex-col py-4 text-lg">
                   {links &&
-                    links.map(({ label, href, icon: Icon, links }, index) => (
+                    links.map(({ label, href, icon: Icon, links, isInternal }, index) => (
                       <li key={`item-link-${index}`} className={links?.length ? 'dropdown' : ''}>
                         {links && links.length ? (
                           <>
@@ -119,13 +134,24 @@ const Header = () => {
                             </ul>
                           </>
                         ) : (
-                          <Link
-                            className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-primary-text-white hover:opacity-80"
-                            href={href as string}
-                            onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
-                          >
-                            {label}
-                          </Link>
+                          <>
+                            {isInternal ? (
+                              <button
+                                className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-primary-text-white hover:opacity-80 w-full text-left"
+                                onClick={(e) => handleInternalNavigation(href as string, e)}
+                              >
+                                {label}
+                              </button>
+                            ) : (
+                              <Link
+                                className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-primary-text-white hover:opacity-80"
+                                href={href as string}
+                                onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
+                              >
+                                {label}
+                              </Link>
+                            )}
+                          </>
                         )}
                       </li>
                     ))}
@@ -144,7 +170,7 @@ const Header = () => {
         <nav className="hidden md:flex md:w-full justify-center w-auto text-primary-text-white md:mx-5 md:h-auto md:items-center md:overflow-visible md:static md:bg-transparent md:backdrop-blur-none md:flex-row" aria-label="Main navigation">
           <ul className="flex w-auto flex-row self-center text-base">
             {links &&
-              links.map(({ label, href, icon: Icon, links }, index) => (
+              links.map(({ label, href, icon: Icon, links, isInternal }, index) => (
                 <li key={`desktop-item-link-${index}`} className={links?.length ? 'dropdown' : ''}>
                   {links && links.length ? (
                     <>
@@ -172,13 +198,24 @@ const Header = () => {
                       </ul>
                     </>
                   ) : (
-                    <Link
-                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-primary-text-white hover:opacity-80"
-                      href={href as string}
-                      onClick={() => handleDropdownOnClick(index)}
-                    >
-                      {label}
-                    </Link>
+                    <>
+                      {isInternal ? (
+                        <button
+                          className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-primary-text-white hover:opacity-80"
+                          onClick={(e) => handleInternalNavigation(href as string, e)}
+                        >
+                          {label}
+                        </button>
+                      ) : (
+                        <Link
+                          className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-primary-text-white hover:opacity-80"
+                          href={href as string}
+                          onClick={() => handleDropdownOnClick(index)}
+                        >
+                          {label}
+                        </Link>
+                      )}
+                    </>
                   )}
                 </li>
               ))}

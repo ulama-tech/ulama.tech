@@ -50,16 +50,18 @@ export const headerData: HeaderProps = {
     // },
     {
       label: 'Why Ulama',
-
-      href: "#why",
+      href: 'why',
+      isInternal: true,
     },
     {
       label: 'Features',
-      href: '#features',
+      href: 'features',
+      isInternal: true,
     },
     {
       label: 'Team',
-      href: '#team',
+      href: 'team',
+      isInternal: true,
     },
     {
       label: 'Blog',
