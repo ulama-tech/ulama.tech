@@ -51,9 +51,22 @@ const FeatureCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [showBottomBar, setShowBottomBar] = useState(false);
     const [scrollProgress, setScrollProgress] = useState<number[]>(Array(carouselData.length * 2).fill(0));
+    const [isDesktop, setIsDesktop] = useState(false);
     const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
     const containerRef = useRef<HTMLDivElement>(null);
     const mainSectionRef = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 1024);
+        };
+
+        // Set initial value
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     useEffect(() => {
         const calculateScrollProgress = () => {
@@ -149,11 +162,11 @@ const FeatureCarousel = () => {
                 id="features"
                 className="relative bg-primary"
                 style={{
-                    backgroundImage: `url(${bgNet.src})`,
-                    backgroundAttachment: 'fixed',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover'
+                    backgroundImage: isDesktop ? `url(${bgNet.src})` : 'none',
+                    backgroundAttachment: isDesktop ? 'fixed' : 'initial',
+                    backgroundPosition: isDesktop ? 'center' : 'initial',
+                    backgroundRepeat: isDesktop ? 'no-repeat' : 'initial',
+                    backgroundSize: isDesktop ? 'cover' : 'initial'
                 }}
             >
                 <div className="absolute inset-0 bg-primary/70"></div>
