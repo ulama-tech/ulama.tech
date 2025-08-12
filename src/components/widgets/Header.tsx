@@ -69,7 +69,7 @@ const Header = () => {
       id="header"
     >
       <div className="mx-auto w-full  py-2 px-3 md:flex md:justify-between md:py-2 md:px-4 max-w-[100rem]">
-        <div className="flex justify-between">
+        <div className="flex justify-between py-1">
           <Link
             className="flex items-center"
             href="/"
@@ -157,9 +157,12 @@ const Header = () => {
                     ))}
                 </ul>
                 <div className="w-full p-4">
-                  <button className="bg-secondary text-white font-medium py-3 px-8 rounded-md hover:bg-orange-500 transition-all duration-200 ease-in-out w-full shadow-orange-glow">
-                    Book a Demo
-                  </button>
+                  <Link href="https://cal.com/team/ulama/demo" target="_blank">
+
+                    <button className="bg-secondary text-white font-medium py-3 px-8 rounded-md hover:bg-orange-500 transition-all duration-200 ease-in-out w-full shadow-orange-glow">
+                      Book a Demo
+                    </button>
+                  </Link>
                 </div>
               </motion.nav>
             </>
@@ -223,9 +226,12 @@ const Header = () => {
         </nav>
         <div className="hidden md:flex md:w-auto md:self-center">
           <div className="flex w-full items-center justify-end md:w-auto">
-            <button className="bg-secondary text-white font-medium py-2 px-8 rounded-md hover:bg-orange-500 transition-all duration-200 ease-in-out whitespace-nowrap shadow-orange-glow">
-              Book a Demo
-            </button>
+            <Link href="https://cal.com/team/ulama/demo" target="_blank">
+
+              <button className="bg-secondary text-white font-medium py-2 px-8 rounded-md hover:bg-orange-500 transition-all duration-200 ease-in-out whitespace-nowrap shadow-orange-glow">
+                Book a Demo
+              </button>
+            </Link>
           </div>
         </div>
       </div>

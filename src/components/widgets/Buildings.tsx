@@ -7,9 +7,9 @@ import build4 from '../../assets/images/buildings/build4.png';
 
 function Buildings() {
     return (
-        <section className="relative py-16 md:py-24 bg-gray-50">
+        <section className="relative pt-12 md:pt-32 bg-gray-50">
             <div className="mx-auto">
-                =                <div className="block lg:hidden text-center mb-8 px-4">
+                <div className="block lg:hidden text-center mb-8 px-4">
                     <h2 className="text-2xl font-bold text-gray-900 leading-tight">
                         Design to construction,{' '}
                         <span className="block">
