@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
 import footerimg from '~/assets/images/footerimg.png';
 import logoSrc from '~/assets/images/ulama_logo.svg';
 import Button from '~/components/ui/Button';
@@ -21,13 +22,18 @@ const Footer2 = () => {
                 .
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="primary" size="lg">
-                  Book a Demo
-                </Button>
+                <Link href="https://cal.com/team/ulama/demo" target="_blank">
+                  <Button variant="primary" size="lg">
+                    Book a Demo
+                  </Button>
+                </Link>
+                <Link href="mailto:tyce@ulama.tech" target="_blank">
 
-                <Button variant="secondary" size="lg">
-                  Contact Us
-                </Button>
+                  <Button variant="secondary" size="lg">
+                    Contact Us
+                  </Button>
+                </Link>
+
               </div>
             </div>
 

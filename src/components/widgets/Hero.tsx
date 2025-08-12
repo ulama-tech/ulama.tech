@@ -40,21 +40,21 @@ const Hero = () => {
 
           <div className="relative hidden lg:block">
             <div className="relative h-[32rem]">
-              <div className="absolute top-0 right-0 h-[25rem] w-[28rem] ">
+              <div className="absolute top-0 right-0 h-[25rem] w-[28rem] rounded-3xl ">
                 <Image
                   src={heroImage1}
                   alt="Code compliance interface"
                   fill
-                  className="object-contain rounded-lg scale-110 "
+                  className="object-contain rounded-xl scale-110 "
                 />
               </div>
 
-              <div className="absolute top-10 right-30 2xl:right-72 w-80 h-[30rem]  ">
+              <div className="absolute top-10 right-30 2xl:right-72 w-80 h-[30rem] rounded-3xl  ">
                 <Image
                   src={heroImage2}
                   alt="Design approval dashboard"
                   fill
-                  className="object-contain rounded-lg scale-110 "
+                  className="object-contain rounded-3xl scale-110 "
                 />
               </div>
             </div>
