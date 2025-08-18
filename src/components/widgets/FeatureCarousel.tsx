@@ -6,42 +6,37 @@ import bgNet from '~/assets/images/bg-net.svg';
 import carr1 from '~/assets/images/carousel/carr-1-u.png';
 import carr2 from '~/assets/images/carousel/carr-2-u.png';
 import carr3 from '~/assets/images/carousel/carr-3-u.png';
-import carr4 from '~/assets/images/carousel/carr-4-u.png';
+import carr4 from '~/assets/images/carousel/carr-6-u.png';
 import carr5 from '~/assets/images/carousel/carr-5-u.png';
 
 const carouselData = [
     {
         id: 1,
-        heading: "Powerful ",
-        subheading: "Compliance Checking",
+        title: " <span class=\"text-[#2DE1C2]\">Powerful</span> Compliance Checking",
         description: "Powered by Computer Vision and our vetted compliance algorithms, Ulama scans your entire building to uncover code violations.",
         image: carr1
     },
     {
         id: 2,
-        heading: "BYO ",
-        subheading: "3D Modeling",
+        title: " <span class=\"text-[#2DE1C2]\">BYO </span> 3D Modeling",
         description: "We offer a 1-button sync from Revit, Archichad, SketchUp, Rhino, and IFC file upload for seamless integration with your existing workflows.",
         image: carr2
     },
     {
         id: 3,
-        heading: "Information to ",
-        subheading: "Action",
+        title: "Information to <span class=\"text-[#2DE1C2]\">Action</span>",
         description: "For every code violation, we show you the actual code language and our plain English translation and give text and visual feedback so you can act quickly and decisively.",
         image: carr3
     },
     {
         id: 4,
-        heading: "Supercharge ",
-        subheading: "Team Collaboration",
+        title: " <span class=\"text-[#2DE1C2]\">Supercharge </span> Team Collaboration",
         description: "Track your work with comments and threads, and tag team members to assign violation corrections. ",
         image: carr4
     },
     {
         id: 5,
-        heading: "The Proof ",
-        subheading: "is in the Pudding",
+        title: "The <span class=\"text-[#2DE1C2]\">Proof</span> is in the Pudding",
         description: "When you're ready to submit your designs for permit approval, our compliance report clearly communicates the compliance of your designs to reviewers.",
         image: carr5
     }
@@ -195,9 +190,7 @@ const FeatureCarousel = () => {
                                     y: { duration: 0.4, ease: [0.4, 0, 0.2, 1] }
                                 }}
                             >
-                                <h2 className="font-dm-sans text-4xl sm:text-5xl font-semibold text-white leading-tight mb-6">
-                                    {item.heading}{' '}
-                                    <span className="text-[#2DE1C2]">{item.subheading}</span>
+                                <h2 className="font-dm-sans text-4xl sm:text-5xl font-semibold text-white leading-tight mb-6" dangerouslySetInnerHTML={{ __html: item.title }}>
                                 </h2>
 
                                 <p className="text-lg sm:text-xl text-white/80 font-dm-sans leading-relaxed max-w-3xl mx-auto">
@@ -220,7 +213,7 @@ const FeatureCarousel = () => {
                                 <div className="relative h-[350px] sm:h-[400px]">
                                     <Image
                                         src={item.image}
-                                        alt={`${item.heading} ${item.subheading}`}
+                                        alt={`Feature ${index + 1}`}
                                         fill
                                         className="object-contain rounded-2xl"
                                     />
@@ -279,9 +272,7 @@ const FeatureCarousel = () => {
                                                     pointerEvents: opacity > 0.5 ? 'auto' : 'none'
                                                 }}
                                             >
-                                                <h2 className="font-dm-sans text-5xl xl:text-6xl font-semibold text-white leading-tight">
-                                                    {item.heading}{' '}
-                                                    <span className="text-[#2DE1C2]">{item.subheading}</span>
+                                                <h2 className="font-dm-sans text-5xl xl:text-6xl font-semibold text-white leading-tight" dangerouslySetInnerHTML={{ __html: item.title }}>
                                                 </h2>
 
                                                 <p className="mt-8 text-xl text-white/80 font-dm-sans leading-relaxed max-w-2xl">
@@ -317,7 +308,7 @@ const FeatureCarousel = () => {
                                 >
                                     <Image
                                         src={item.image}
-                                        alt={`${item.heading} ${item.subheading}`}
+                                        alt={`Feature ${index + 1}`}
                                         fill
                                         className="object-contain rounded-2xl"
                                     />

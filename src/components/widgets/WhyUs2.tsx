@@ -4,7 +4,7 @@ import { Clock, DollarSign, Receipt } from 'lucide-react';
 
 const WhyUs2 = () => {
     return (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#E6DCFF]">
+        <section id="why-us" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#E6DCFF]">
             <div className="mx-auto max-w-7xl">
                 <div className="flex md:flex-row flex-col gap-8 justify-between items-center">
 

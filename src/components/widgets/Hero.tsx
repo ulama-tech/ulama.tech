@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
 import bgNet from '~/assets/images/bg-net.svg';
 import heroImage1 from '~/assets/images/hero-image-1-u.webp';
 import heroImage2 from '~/assets/images/hero-image-2-u.webp';
@@ -33,9 +34,12 @@ const Hero = () => {
             </p>
 
             <div className="mt-8">
-              <Button variant="primary" size="lg">
-                Get Started
-              </Button>
+              <Link href="https://cal.com/team/ulama/demo" target="_blank">
+
+                <Button variant="primary" size="lg">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -45,13 +49,8 @@ const Hero = () => {
                 <Image
                   src={heroImage1}
                   alt="Code compliance interface"
-                  width={448}
-                  height={400}
-                  priority={true}
-                  placeholder="blur"
-                  blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP8BEBERiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
-                  sizes="(min-width: 1024px) 28rem, 0px"
-                  className="object-contain rounded-xl scale-110 w-full h-full"
+                  fill
+                  className="object-contain rounded-xl scale-110 "
                 />
               </div>
 
@@ -59,12 +58,8 @@ const Hero = () => {
                 <Image
                   src={heroImage2}
                   alt="Design approval dashboard"
-                  width={320}
-                  height={480}
-                  placeholder="blur"
-                  blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
-                  sizes="(min-width: 1024px) 20rem, 0px"
-                  className="object-contain rounded-3xl scale-110 w-full h-full"
+                  fill
+                  className="object-contain rounded-3xl scale-110 "
                 />
               </div>
             </div>
@@ -77,12 +72,8 @@ const Hero = () => {
               <Image
                 src={heroImage1}
                 alt="Code compliance interface"
-                width={256}
-                height={240}
-                placeholder="blur"
-                blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
-                sizes="(max-width: 1023px) 16rem, 0px"
-                className="object-contain rounded-lg w-full h-full"
+                fill
+                className="object-contain rounded-lg"
               />
             </div>
 
@@ -90,12 +81,8 @@ const Hero = () => {
               <Image
                 src={heroImage2}
                 alt="Design approval dashboard"
-                width={224}
-                height={288}
-                placeholder="blur"
-                blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
-                sizes="(max-width: 1023px) 14rem, 0px"
-                className="object-contain rounded-lg w-full h-full"
+                fill
+                className="object-contain rounded-lg"
               />
             </div>
           </div>
