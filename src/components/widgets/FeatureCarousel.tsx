@@ -220,7 +220,8 @@ const FeatureCarousel = () => {
                                 </div>
                             </motion.div>
 
-                            <div className="flex justify-center">
+                            {/* Progress bar hidden in mobile view */}
+                            <div className="hidden">
                                 <div className="w-64 h-[2px] bg-white/30 rounded-full relative">
                                     <div
                                         className="bg-secondary h-[2px] w-12 rounded-full transition-all duration-500 ease-in-out absolute top-0"
