@@ -3,11 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import bgNet from '~/assets/images/bg-net.svg';
-import carr1 from '~/assets/images/carousel/carr-1-u.png';
-import carr2 from '~/assets/images/carousel/carr-2-u.png';
-import carr3 from '~/assets/images/carousel/carr-3-u.png';
-import carr4 from '~/assets/images/carousel/carr-6-u.png';
-import carr5 from '~/assets/images/carousel/carr-5-u.png';
+import carr1 from '~/assets/images/carousel/carr-1-u.webp';
+import carr2 from '~/assets/images/carousel/carr-2-u.webp';
+import carr3 from '~/assets/images/carousel/carr-3-u.webp';
+import carr4 from '~/assets/images/carousel/carr-6-u.webp';
+import carr5 from '~/assets/images/carousel/carr-5-u.webp';
 
 const carouselData = [
     {
