@@ -1,8 +1,8 @@
 
 import Image from 'next/image';
 import bgNet from '~/assets/images/bg-net.svg';
-import heroImage1 from '~/assets/images/hero-image-1-u.png';
-import heroImage2 from '~/assets/images/hero-image-2-u.png';
+import heroImage1 from '~/assets/images/hero-image-1-u.webp';
+import heroImage2 from '~/assets/images/hero-image-2-u.webp';
 import Button from '~/components/ui/Button';
 
 const Hero = () => {
@@ -45,8 +45,13 @@ const Hero = () => {
                 <Image
                   src={heroImage1}
                   alt="Code compliance interface"
-                  fill
-                  className="object-contain rounded-xl scale-110 "
+                  width={448}
+                  height={400}
+                  priority={true}
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP8BEBERiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
+                  sizes="(min-width: 1024px) 28rem, 0px"
+                  className="object-contain rounded-xl scale-110 w-full h-full"
                 />
               </div>
 
@@ -54,8 +59,12 @@ const Hero = () => {
                 <Image
                   src={heroImage2}
                   alt="Design approval dashboard"
-                  fill
-                  className="object-contain rounded-3xl scale-110 "
+                  width={320}
+                  height={480}
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
+                  sizes="(min-width: 1024px) 20rem, 0px"
+                  className="object-contain rounded-3xl scale-110 w-full h-full"
                 />
               </div>
             </div>
@@ -68,8 +77,12 @@ const Hero = () => {
               <Image
                 src={heroImage1}
                 alt="Code compliance interface"
-                fill
-                className="object-contain rounded-lg"
+                width={256}
+                height={240}
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
+                sizes="(max-width: 1023px) 16rem, 0px"
+                className="object-contain rounded-lg w-full h-full"
               />
             </div>
 
@@ -77,8 +90,12 @@ const Hero = () => {
               <Image
                 src={heroImage2}
                 alt="Design approval dashboard"
-                fill
-                className="object-contain rounded-lg"
+                width={224}
+                height={288}
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRhABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSAwAAAABBxAREYiImP7/iImI/wEQERGI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/iImI/4iJiP+IiYj/ARAREQAA"
+                sizes="(max-width: 1023px) 14rem, 0px"
+                className="object-contain rounded-lg w-full h-full"
               />
             </div>
           </div>
