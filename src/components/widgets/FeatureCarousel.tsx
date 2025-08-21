@@ -318,10 +318,10 @@ const FeatureCarousel = () => {
                         ))}
                     </div>
                 </div>
-                {showBottomBar && (
+                {/* {showBottomBar && (
                     <div className="fixed bottom-0 left-0 right-0 h-5 bg-secondary z-50 transition-all duration-300 opacity-100 transform translate-y-0">
                     </div>
-                )}
+                )} */}
             </section>
 
 
