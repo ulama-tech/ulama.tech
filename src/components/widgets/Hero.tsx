@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
 
             <div className="mt-8">
-              <Link href="https://cal.com/team/ulama/demo" target="_blank">
+              <Link href="https://app.ulama.tech" target="_blank">
 
                 <Button variant="primary" size="lg">
                   Get Started

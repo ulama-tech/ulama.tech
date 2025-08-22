@@ -102,11 +102,12 @@ const FeatureCarousel = () => {
                 }
 
                 // Determine if this should be the active index
-                // For desktop sections (first half of array) or mobile sections (second half)
-                const sectionIndex = index < carouselData.length ? index : index - carouselData.length;
-                if (sectionCenter >= viewportCenter - 100 && sectionCenter <= viewportCenter + 100) {
+                // Use only desktop left-side sections (first half of array) for activeIndex
+                if (index < carouselData.length) {
+                    // For left text sections, advance progress bar when text becomes prominent
+                    // Use a lower threshold so progress bar advances as text starts becoming visible
                     if (opacity > 0.7) {
-                        setActiveIndex(sectionIndex);
+                        setActiveIndex(index);
                     }
                 }
 
