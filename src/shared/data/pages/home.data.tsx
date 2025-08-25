@@ -469,7 +469,7 @@ export const teamHome: TeamProps = {
         {
           title: 'Contact by email',
           icon: MailIcon,
-          href: 'mailto:tyce@ulama.tech',
+          href: 'mailto:hello@ulama.tech',
         },
       ],
     },

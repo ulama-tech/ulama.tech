@@ -27,7 +27,7 @@ const Footer2 = () => {
                     Book a Demo
                   </Button>
                 </Link>
-                <Link href="mailto:tyce@ulama.tech" target="_blank">
+                <Link href="mailto:hello@ulama.tech" target="_blank">
 
                   <Button variant="secondary" size="lg">
                     Contact Us
@@ -116,8 +116,8 @@ const Footer2 = () => {
                 <h3 className="text-xl font-semibold mb-6 opacity-75">Contact Us</h3>
                 <div className="space-y-3 text-white">
                   <p>
-                    <a href="mailto:tyce@ulama.tech" className="hover:text-white transition-colors">
-                      tyce@ulama.tech
+                    <a href="mailto:hello@ulama.tech" className="hover:text-white transition-colors">
+                      hello@ulama.tech
                     </a>
                   </p>
                   <p>370 Jay St, 7th Fl</p>
