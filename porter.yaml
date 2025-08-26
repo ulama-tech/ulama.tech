@@ -12,7 +12,7 @@ services:
       - name: www.ulama.tech
     healthCheck:
       enabled: true
-      httpPath: "/"
+      httpPath: '/'
       initialDelaySeconds: 30
       periodSeconds: 10
       timeoutSeconds: 5
@@ -20,7 +20,7 @@ services:
     autoscaling:
       enabled: true
       minInstances: 1
-      maxInstances: 3
+      maxInstances: 5
       cpuThresholdPercent: 70
       memoryThresholdPercent: 80
     private: false

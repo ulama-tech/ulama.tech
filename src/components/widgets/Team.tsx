@@ -1,7 +1,5 @@
 
 import Image from 'next/image';
-import tyceImage from '~/assets/images/tyce.jpeg';
-import leulImage from '~/assets/images/leul.jpeg';
 import Link from 'next/link';
 
 const Team = () => (
@@ -36,7 +34,7 @@ const Team = () => (
             <div className="relative">
               <div className="w-64 h-80 rounded-lg overflow-hidden ">
                 <Image
-                  src={tyceImage}
+                  src="/images/tyce.jpeg"
                   alt="Tyce Herrman, CEO"
                   className="w-full h-full object-cover"
                   width={256}
@@ -76,7 +74,7 @@ const Team = () => (
             <div className="relative">
               <div className="w-64 h-80 rounded-lg overflow-hidden ">
                 <Image
-                  src={leulImage}
+                  src="/images/leul.jpeg"
                   alt="Leul Tesfaye, CTO"
                   className="w-full h-full object-cover"
                   width={256}

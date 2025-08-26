@@ -1,8 +1,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import footerimg from '~/assets/images/footerimg.png';
-import logoSrc from '~/assets/images/ulama_logo.svg';
 import Button from '~/components/ui/Button';
 const Footer2 = () => {
   return (
@@ -40,11 +38,12 @@ const Footer2 = () => {
             <div className="relative">
               <div className="relative z-10 w-82 md:w-96">
                 <Image
-                  src={footerimg}
+                  src="/images/footerimg.png"
                   alt="Building illustration"
                   width={300}
                   height={300}
                   className="w-full h-full"
+                  loading="lazy"
                 />
               </div>
 
@@ -59,11 +58,11 @@ const Footer2 = () => {
             <div className="flex-1 lg:flex-none lg:w-1/4">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-10 h-10 rounded flex items-center justify-center">
-                  <Image
-                    src={logoSrc}
+                  <img
+                    src="/images/ulama_logo.svg"
                     alt="Ulama Logo"
-                    width={30}
-                    height={30}
+                    width={40}
+                    height={40}
                     className="w-10 h-10"
                   />
                 </div>
@@ -107,8 +106,8 @@ const Footer2 = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-6 opacity-75">Support</h3>
                 <ul className="space-y-3">
-                  <li><a href="/terms" className="text-white hover:text-white transition-colors">Terms of Service</a></li>
-                  <li><a href="/privacy" className="text-white hover:text-white transition-colors">Privacy Policy</a></li>
+                  <li><Link href="/terms" className="text-white hover:text-white transition-colors">Terms of Service</Link></li>
+                  <li><Link href="/privacy" className="text-white hover:text-white transition-colors">Privacy Policy</Link></li>
                 </ul>
               </div>
 

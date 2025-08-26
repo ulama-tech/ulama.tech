@@ -1,9 +1,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import bgNet from '~/assets/images/bg-net.svg';
-import heroImage1 from '~/assets/images/hero-image-1-u.webp';
-import heroImage2 from '~/assets/images/hero-image-2-u.webp';
 import Button from '~/components/ui/Button';
 
 const Hero = () => {
@@ -11,10 +8,11 @@ const Hero = () => {
     <section id="heroOne" className="relative bg-primary overflow-hidden ">
       <div className="absolute inset-0 opacity-30 max-w-[100rem]">
         <Image
-          src={bgNet}
+          src="/images/bg-net.svg"
           alt="Background pattern"
           fill
           className="object-cover"
+          priority
         />
       </div>
 
@@ -47,19 +45,23 @@ const Hero = () => {
             <div className="relative h-[32rem]">
               <div className="absolute top-0 right-0 h-[25rem] w-[28rem] rounded-3xl ">
                 <Image
-                  src={heroImage1}
+                  src="/images/hero-image-1-u.webp"
                   alt="Code compliance interface"
                   fill
                   className="object-contain rounded-xl scale-110 "
+                  sizes="(max-width: 1024px) 0vw, 448px"
+                  priority
                 />
               </div>
 
               <div className="absolute top-10 right-30 2xl:right-72 w-80 h-[30rem] rounded-3xl  ">
                 <Image
-                  src={heroImage2}
+                  src="/images/hero-image-2-u.webp"
                   alt="Design approval dashboard"
                   fill
                   className="object-contain rounded-3xl scale-110 "
+                  sizes="(max-width: 1024px) 0vw, 320px"
+                  priority
                 />
               </div>
             </div>
@@ -70,19 +72,23 @@ const Hero = () => {
           <div className="relative h-80 mx-auto max-w-sm">
             <div className="absolute top-0 right-0 h-60 w-64">
               <Image
-                src={heroImage1}
+                src="/images/hero-image-1-u.webp"
                 alt="Code compliance interface"
                 fill
                 className="object-contain rounded-lg"
+                sizes="256px"
+                priority
               />
             </div>
 
             <div className="absolute top-8 left-0 w-56 h-72">
               <Image
-                src={heroImage2}
+                src="/images/hero-image-2-u.webp"
                 alt="Design approval dashboard"
                 fill
                 className="object-contain rounded-lg"
+                sizes="224px"
+                priority
               />
             </div>
           </div>

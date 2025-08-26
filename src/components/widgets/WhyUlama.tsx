@@ -1,9 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import increasedCostsImage from '../../assets/images/increased-costs.png';
-import complexRegulatoryRequirementsImage from '../../assets/images/complex-regulatory.png';
-import legalComplianceRisksImage from '../../assets/images/legal-risks.png';
-import delayedRevenueImage from '../../assets/images/delayed-revenue.png';
 
 const WhyUlama = () => {
     const complianceChallenges = [
@@ -11,25 +7,25 @@ const WhyUlama = () => {
             id: 1,
             title: "Delayed revenue for design teams",
             description: "When permit approval is delayed, invoicing is delayed. Ulama means improved cashflow for design teams.",
-            imageUrl: delayedRevenueImage.src
+            imageUrl: "/images/delayed-revenue.png"
         },
         {
             id: 2,
             title: "Increased project costs",
             description: "For owners and developers, permit delays mean ballooning costs and delays in realizing revenue.",
-            imageUrl: increasedCostsImage.src
+            imageUrl: "/images/increased-costs.png"
         },
         {
             id: 3,
             title: "Complex regulatory requirements",
             description: "Navigating building codes and regulations requires expertise that many teams lack.",
-            imageUrl: complexRegulatoryRequirementsImage.src
+            imageUrl: "/images/complex-regulatory.png"
         },
         {
             id: 4,
             title: "Legal compliance risks",
             description: "Non-compliance can result in costly fines, project shutdowns, and legal disputes.",
-            imageUrl: legalComplianceRisksImage.src
+            imageUrl: "/images/legal-risks.png"
         }
     ];
 

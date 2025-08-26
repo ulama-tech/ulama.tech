@@ -8,7 +8,7 @@ import {
   TriangleRight,
 } from 'lucide-react';
 
-import { Stairs, Toilet, Urinal, Mirror, ClimbStairsUser, BalanceBeam } from '@vectopus/atlas-icons-react';
+// Icons removed - using alternatives from lucide-react
 
 import {
   CallToActionProps,
@@ -19,8 +19,6 @@ import {
   PricingProps,
   TestimonialsProps,
 } from '~/shared/types';
-
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
 
 const BUY_NOW_URL = 'https://buy.stripe.com/7sI7vu4kn5VzbCw7ss';
 
@@ -84,13 +82,13 @@ export const featuresRoseOne: FeaturesProps = {
   items: [
     { title: 'Parking stalls', icon: ParkingCircleIcon },
     { title: 'Ramps', icon: TriangleRight },
-    { title: 'Stairs', icon: Stairs },
-    { title: 'Stair handrails', icon: ClimbStairsUser },
+    { title: 'Stairs', icon: AccessibilityIcon },
+    { title: 'Stair handrails', icon: AccessibilityIcon },
     { title: 'Drinking fountains', icon: GlassWaterIcon },
-    { title: 'Toilets', icon: Toilet },
-    { title: 'Urinals', icon: Urinal },
-    { title: 'Mirrors', icon: Mirror },
-    { title: 'Bathroom grab bars', icon: BalanceBeam },
+    { title: 'Toilets', icon: BathIcon },
+    { title: 'Urinals', icon: BathIcon },
+    { title: 'Mirrors', icon: GlassWaterIcon },
+    { title: 'Bathroom grab bars', icon: AccessibilityIcon },
   ],
 };
 

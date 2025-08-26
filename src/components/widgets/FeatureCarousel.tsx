@@ -2,43 +2,37 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import bgNet from '~/assets/images/bg-net.svg';
-import carr1 from '~/assets/images/carousel/carr-1-u.webp';
-import carr2 from '~/assets/images/carousel/carr-2-u.webp';
-import carr3 from '~/assets/images/carousel/carr-3-u.webp';
-import carr4 from '~/assets/images/carousel/carr-6-u.webp';
-import carr5 from '~/assets/images/carousel/carr-5-u.webp';
 
 const carouselData = [
     {
         id: 1,
         title: " <span class=\"text-[#2DE1C2]\">Powerful</span> Compliance Checking",
         description: "Powered by Computer Vision and our vetted compliance algorithms, Ulama scans your entire building to uncover code violations.",
-        image: carr1
+        image: '/images/carousel/carr-1-u.webp'
     },
     {
         id: 2,
         title: " <span class=\"text-[#2DE1C2]\">BYO </span> 3D Modeling",
         description: "We offer a 1-button sync from Revit, Archichad, SketchUp, Rhino, and IFC file upload for seamless integration with your existing workflows.",
-        image: carr2
+        image: '/images/carousel/carr-2-u.webp'
     },
     {
         id: 3,
         title: "Information to <span class=\"text-[#2DE1C2]\">Action</span>",
         description: "For every code violation, we show you the actual code language and our plain English translation and give text and visual feedback so you can act quickly and decisively.",
-        image: carr3
+        image: '/images/carousel/carr-3-u.webp'
     },
     {
         id: 4,
         title: " <span class=\"text-[#2DE1C2]\">Supercharge </span> Team Collaboration",
         description: "Track your work with comments and threads, and tag team members to assign violation corrections. ",
-        image: carr4
+        image: '/images/carousel/carr-6-u.webp'
     },
     {
         id: 5,
         title: "The <span class=\"text-[#2DE1C2]\">Proof</span> is in the Pudding",
         description: "When you're ready to submit your designs for permit approval, our compliance report clearly communicates the compliance of your designs to reviewers.",
-        image: carr5
+        image: '/images/carousel/carr-5-u.webp'
     }
 ];
 
@@ -158,7 +152,7 @@ const FeatureCarousel = () => {
                 id="features"
                 className="relative bg-primary"
                 style={{
-                    backgroundImage: isDesktop ? `url(${bgNet.src})` : 'none',
+                    backgroundImage: isDesktop ? `url(/images/bg-net.svg)` : 'none',
                     backgroundAttachment: isDesktop ? 'fixed' : 'initial',
                     backgroundPosition: isDesktop ? 'center' : 'initial',
                     backgroundRepeat: isDesktop ? 'no-repeat' : 'initial',

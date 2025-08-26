@@ -8,7 +8,6 @@ import Announcement from '~/components/widgets/Announcement';
 import { Lora, DM_Sans, IBM_Plex_Mono } from 'next/font/google';
 import '~/assets/styles/base.css';
 
-import dynamic from 'next/dynamic';
 import Footer2 from '~/components/widgets/Footer2';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
@@ -16,7 +15,7 @@ const loraFont = Lora({ subsets: ['latin'], variable: '--font-lora' });
 const dmSansFont = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
 const ibmPlexMonoFont = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-ibm-mono' });
 
-const CookieConsentBanner = dynamic(() => import('../src/components/common/CookieConsentBanner'), { ssr: false });
+import CookieConsentBanner from '../src/components/common/CookieConsentBanner';
 
 export interface LayoutProps {
   children: React.ReactNode;

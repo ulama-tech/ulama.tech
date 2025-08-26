@@ -1,17 +1,17 @@
 import { Metadata } from 'next';
 import Hero2 from '~/components/widgets/Hero2';
-import BIMRoses from '~/assets/images/bim_roses.jpg';
 
 export const metadata: Metadata = {
   title: 'Thanks!',
 };
 
 type PageProps = {
-  searchParams: Record<string, string>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export default function Page({ searchParams }: PageProps) {
-  const { orderConfirmationId } = searchParams;
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const { orderConfirmationId } = params;
 
   return (
     <Hero2
@@ -33,7 +33,7 @@ export default function Page({ searchParams }: PageProps) {
           </a>
         </>
       }
-      image={{ src: BIMRoses, alt: 'A building composed of Roses' }}
+      image={{ src: '/images/bim_roses.jpg', alt: 'A building composed of Roses' }}
     />
   );
 }

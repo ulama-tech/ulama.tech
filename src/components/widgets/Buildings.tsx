@@ -1,9 +1,5 @@
 
 import Image from 'next/image';
-import build1 from '../../assets/images/buildings/build1.png';
-import build2 from '../../assets/images/buildings/build2.png';
-import build3 from '../../assets/images/buildings/build3.png';
-import build4 from '../../assets/images/buildings/build4.png';
 
 function Buildings() {
     return (
@@ -33,37 +29,45 @@ function Buildings() {
                     <div className="flex gap-4 lg:gap-6 items-end justify-center min-w-[800px] lg:min-w-[1200px]">
                         <div className="aspect-[9/10] relative rounded-sm overflow-hidden w-48 lg:w-72 flex-shrink-0">
                             <Image
-                                src={build1}
+                                src="/images/buildings/build1.png"
                                 alt="Modern interior with wooden features"
                                 fill
+                                sizes="(max-width: 1024px) 192px, 288px"
                                 className="object-cover"
+                                loading="lazy"
                             />
                         </div>
 
                         <div className="aspect-[4/6] relative rounded-sm overflow-hidden w-48 lg:w-72 flex-shrink-0">
                             <Image
-                                src={build2}
+                                src="/images/buildings/build2.png"
                                 alt="Modern white building exterior"
                                 fill
+                                sizes="(max-width: 1024px) 192px, 288px"
                                 className="object-cover"
+                                loading="lazy"
                             />
                         </div>
 
                         <div className="aspect-[6/5] relative rounded-sm overflow-hidden w-48 lg:w-72 flex-shrink-0">
                             <Image
-                                src={build3}
+                                src="/images/buildings/build3.png"
                                 alt="Modern kitchen interior"
                                 fill
+                                sizes="(max-width: 1024px) 192px, 288px"
                                 className="object-cover"
+                                loading="lazy"
                             />
                         </div>
 
                         <div className="aspect-[5/6] relative rounded-sm overflow-hidden w-48 lg:w-72 flex-shrink-0">
                             <Image
-                                src={build4}
+                                src="/images/buildings/build4.png"
                                 alt="Red brick building exterior"
                                 fill
+                                sizes="(max-width: 1024px) 192px, 288px"
                                 className="object-cover"
+                                loading="lazy"
                             />
                         </div>
                     </div>

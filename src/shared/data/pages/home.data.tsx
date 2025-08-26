@@ -23,16 +23,7 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.svg';
-import nextJsLogo from '~/assets/images/nextjs-logo.png';
-import reactLogo from '~/assets/images/react-logo.png';
-import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
-import typescriptLogo from '~/assets/images/typescript-logo.png';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-import gasImg from '~/assets/images/gas.jpg';
-import tyceImg from '~/assets/images/tyce.jpeg';
-import leulImg from '~/assets/images/leul.jpeg';
+// Image imports removed - now using public URLs directly
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -58,7 +49,7 @@ export const heroHome: HeroProps = {
     href: '#features',
   },
   image: {
-    src: heroImg,
+    src: '/images/hero.svg',
     alt: 'Ulama in Action',
   },
 };
@@ -70,22 +61,22 @@ export const socialProofHome: SocialProofProps = {
   images: [
     {
       link: 'https://nextjs.org/',
-      src: nextJsLogo,
+      src: '/images/nextjs-logo.png',
       alt: 'NextJs Logo',
     },
     {
       link: 'https://react.dev/',
-      src: reactLogo,
+      src: '/images/react-logo.png',
       alt: 'React Logo',
     },
     {
       link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
+      src: '/images/tailwind-css-logo.png',
       alt: 'Tailwind CSS Logo',
     },
     {
       link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
+      src: '/images/typescript-logo.png',
       alt: 'Typescript Logo',
     },
   ],
@@ -163,7 +154,7 @@ export const contentHomeOne: ContentProps = {
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: '/images/camera-front.jpg',
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -197,7 +188,7 @@ export const contentHomeTwo: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: '/images/camera-back.jpg',
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -211,7 +202,7 @@ export const stepsHome: StepsProps = {
   isReversed: false,
   isImageDisplayed: true,
   image: {
-    src: gasImg,
+    src: '/images/gas.jpg',
     alt: 'Steps image',
   },
   header: {
@@ -457,7 +448,7 @@ export const teamHome: TeamProps = {
       name: 'Tyce Herrman',
       occupation: 'CEO',
       image: {
-        src: tyceImg,
+        src: '/images/tyce.jpeg',
         alt: 'Tyce Herrman',
       },
       items: [
@@ -477,7 +468,7 @@ export const teamHome: TeamProps = {
       name: 'Leul Tesfaye',
       occupation: 'CTO',
       image: {
-        src: leulImg,
+        src: '/images/leul.jpeg',
         alt: 'Leul Tesfaye',
       },
       items: [
