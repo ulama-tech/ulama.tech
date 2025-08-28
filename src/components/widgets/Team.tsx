@@ -91,7 +91,7 @@ const Team = () => (
                   </Link>
                 </div>
                 <div className="w-12 h-12 bg-primary  flex items-center justify-center cursor-pointer hover:bg-violet-800 transition-all duration-300">
-                  <Link href="https://www.linkedin.com/in/leultesfaye/" target='_blank'>
+                  <Link href="https://www.linkedin.com/in/leul-tesfaye/" target='_blank'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                       <g clipPath="url(#clip0_990_1454)">
                         <path d="M4.92296 2.45229C4.92613 2.86011 4.76873 3.25279 4.48476 3.54551C4.2008 3.83821 3.81307 4.00744 3.40536 4.01663C2.9985 4.0017 2.61293 3.83104 2.32831 3.53989C2.04371 3.24876 1.88181 2.85941 1.8761 2.45229C1.89379 2.05566 2.06162 1.68057 2.3456 1.4031C2.62957 1.12562 3.00843 0.966503 3.40536 0.958008C3.80115 0.966661 4.17867 1.12617 4.46075 1.40392C4.74283 1.68168 4.90818 2.05669 4.92296 2.45229ZM2.03953 6.79507C2.03953 5.89617 2.61155 6.03626 3.40536 6.03626C4.19919 6.03626 4.75953 5.89617 4.75953 6.79507V15.5507C4.75953 16.4613 4.18751 16.2745 3.40536 16.2745C2.62323 16.2745 2.03953 16.4613 2.03953 15.5507V6.79507Z" stroke="white" strokeWidth="1.24315" strokeLinecap="round" strokeLinejoin="round" />

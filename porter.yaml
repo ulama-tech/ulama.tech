@@ -20,7 +20,7 @@ services:
     autoscaling:
       enabled: true
       minInstances: 1
-      maxInstances: 5
+      maxInstances: 3
       cpuThresholdPercent: 70
       memoryThresholdPercent: 80
     private: false
