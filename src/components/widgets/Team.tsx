@@ -43,7 +43,7 @@ const Team = () => (
               </div>
               <div className="absolute bottom-0 left-0 flex ">
                 <div className="w-12 h-12 bg-secondary cursor-pointer hover:bg-orange-500 transition-all duration-300 flex items-center justify-center ">
-                  <Link href="mailto:hello@ulama.tech" target='_blank'>
+                  <Link href="mailto:tyce@ulama.tech" target='_blank'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                       <path d="M7.77429 13.495L10.1903 15.8999C10.3385 16.0517 10.5238 16.1623 10.7279 16.2207C10.932 16.279 11.1478 16.283 11.3539 16.2323C11.5614 16.1841 11.7529 16.0833 11.9101 15.9397C12.0673 15.796 12.1849 15.6145 12.2516 15.4122L16.2192 3.52067C16.3019 3.29786 16.319 3.05597 16.2684 2.82373C16.2177 2.59148 16.1015 2.37868 15.9333 2.2106C15.7653 2.04252 15.5525 1.92623 15.3202 1.87557C15.0881 1.8249 14.8461 1.84199 14.6233 1.92479L2.73174 5.89233C2.52255 5.96378 2.33625 6.08981 2.19207 6.25736C2.04789 6.42492 1.95108 6.62794 1.91163 6.84543C1.87091 7.04325 1.87998 7.24808 1.93801 7.44152C1.99604 7.63496 2.10123 7.81095 2.24411 7.95368L5.28072 10.9903L5.18097 14.836L7.77429 13.495Z" stroke="white" strokeWidth="1.24315" strokeLinecap="round" strokeLinejoin="round" />
                       <path d="M15.4638 2.33972L5.69067 10.4857" stroke="white" strokeWidth="1.24315" strokeLinecap="round" strokeLinejoin="round" />
